@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { UiContainer } from '../layout'
-import { UiAvatar, UiPill } from '../ui'
+import * as Ui from '../ui'
 </script>
 
 <template>
@@ -13,9 +13,9 @@ import { UiAvatar, UiPill } from '../ui'
     </div>
     <div class="grid grid-cols-1 grid-cols-1 xl:grid-cols-2 gap-6">
       <div class="bg-smoke-500 py-24 xl:aspect-square rounded-lg flex items-center justify-center">
-        <UiAvatar size="lg">
+        <Ui.UiAvatar size="lg">
           <span class="text-xl font-medium">KB</span>
-        </UiAvatar>
+        </Ui.UiAvatar>
       </div>
       <div class="flex flex-col justify-center">
         <div class="mb-6">
@@ -34,28 +34,30 @@ import { UiAvatar, UiPill } from '../ui'
         </div>
         <div>
           <h3 class="text-sm text-black-500 mb-3">What I'm passionate about</h3>
-          <div class="flex flex-wrap gap-2 mb-8">
-            <UiPill>Web Development</UiPill>
-            <UiPill>Mobile Development</UiPill>
-            <UiPill>UI/UX Design</UiPill>
-            <UiPill>AI/ML</UiPill>
-            <UiPill>Open Source</UiPill>
-            <UiPill>UI/UX Design</UiPill>
-            <UiPill>AI/ML</UiPill>
-            <UiPill>Open Source</UiPill>
+          <div class="flex flex-wrap gap-2 mb-6">
+            <Ui.UiPill>Web Development</Ui.UiPill>
+            <Ui.UiPill>Mobile Development</Ui.UiPill>
+            <Ui.UiPill>UI/UX Design</Ui.UiPill>
+            <Ui.UiPill>AI/ML</Ui.UiPill>
+            <Ui.UiPill>Open Source</Ui.UiPill>
+            <Ui.UiPill>UI/UX Design</Ui.UiPill>
+            <Ui.UiPill>AI/ML</Ui.UiPill>
+            <Ui.UiPill>Open Source</Ui.UiPill>
           </div>
-          <div
-            class="border border-smoke-500 rounded-lg p-4 min-h-24 grid grid-cols-1 sm:grid-cols-2 gap-4"
-          >
-            <div class="flex flex-col items-center justify-center">
-              <span class="text-xl mb-1">15+</span>
-              <span class="text-xs text-slate-gray-500">Projects compleated</span>
-            </div>
-            <div class="flex flex-col items-center justify-center">
-              <span class="text-xl mb-1">5+</span>
-              <span class="text-xs text-slate-gray-500">Years Experience</span>
-            </div>
-          </div>
+          <Ui.UiCard>
+            <template #body>
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div class="flex flex-col items-center justify-center">
+                  <span class="text-xl mb-1">15+</span>
+                  <span class="text-xs text-slate-gray-500">Projects compleated</span>
+                </div>
+                <div class="flex flex-col items-center justify-center">
+                  <span class="text-xl mb-1">5+</span>
+                  <span class="text-xs text-slate-gray-500">Years Experience</span>
+                </div>
+              </div>
+            </template>
+          </Ui.UiCard>
         </div>
       </div>
     </div>
