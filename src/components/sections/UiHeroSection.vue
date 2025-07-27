@@ -2,7 +2,7 @@
 import { UiAvatar, UiButton } from '../ui'
 import { UiContainer } from '../layout'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
-import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
+import { faGithub, faLinkedin, faMedium } from '@fortawesome/free-brands-svg-icons'
 </script>
 
 <template>
@@ -34,6 +34,9 @@ import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
           </UiButton>
           <UiButton variant="icon">
             <FontAwesomeIcon :icon="faLinkedin" />
+          </UiButton>
+          <UiButton variant="icon">
+            <FontAwesomeIcon :icon="faMedium" />
           </UiButton>
         </div>
       </div>

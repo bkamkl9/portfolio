@@ -10,7 +10,7 @@ const sizeClass = computed(() => {
   if (size === 'md') {
     return `${base} w-32 h-32 text-sm`
   }
-  return `${base} w-16 h-16`
+  return `${base} w-42 h-42`
 })
 </script>
 

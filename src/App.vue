@@ -1,7 +1,8 @@
 <script setup lang="ts">
-import { UiHeroSection } from './components/sections'
+import * as Sections from './components/sections'
 </script>
 
 <template>
-  <UiHeroSection />
+  <Sections.UiHeroSection />
+  <Sections.UiAboutMeSection />
 </template>
