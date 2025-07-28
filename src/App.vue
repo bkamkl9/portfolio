@@ -7,4 +7,5 @@ import * as Sections from './components/sections'
   <Sections.UiAboutMeSection />
   <Sections.UiSkillsSection />
   <Sections.UiProjectsSection />
+  <Sections.UiExperienceSection />
 </template>
