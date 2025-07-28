@@ -13,7 +13,7 @@ const sizeClass = computed(() => {
 
   switch (size) {
     case 'md':
-      return 'px-4 py-2'
+      return 'text-xs px-4 py-1.5'
     case 'lg':
       return 'text-xs px-6 py-2'
   }

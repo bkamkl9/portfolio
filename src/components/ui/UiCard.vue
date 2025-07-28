@@ -1,6 +1,6 @@
 <template>
   <div class="bg-white-500 rounded-lg border border-smoke-500">
-    <div>
+    <div class="overflow-hidden rounded-t-lg">
       <slot name="header" />
     </div>
     <div class="p-4">
