@@ -4,7 +4,7 @@ import { UiContainer } from '../layout'
 </script>
 
 <template>
-  <UiContainer>
+  <UiContainer class="py-24">
     <Ui.UiSectionTitle
       title="Featured Projects"
       description="A selection of projects I've worked on, showcasing different technologies and problem-solving approaches"
