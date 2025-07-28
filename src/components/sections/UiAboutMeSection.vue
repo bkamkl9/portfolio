@@ -4,13 +4,11 @@ import * as Ui from '../ui'
 </script>
 
 <template>
-  <UiContainer class="py-12">
-    <div class="text-center mb-12">
-      <h2 class="font-medium text-md mb-2">About me</h2>
-      <p class="text-sm text-slate-gray-500">
-        Learn more about my journey, passions, and what drives me as a developer
-      </p>
-    </div>
+  <UiContainer class="py-24">
+    <Ui.UiSectionTitle
+      title="About me"
+      description="Learn more about my journey, passions, and what drives me as a developer"
+    />
     <div class="grid grid-cols-1 grid-cols-1 xl:grid-cols-2 gap-6">
       <div class="bg-smoke-500 py-24 xl:aspect-square rounded-lg flex items-center justify-center">
         <Ui.UiAvatar size="lg">
@@ -36,13 +34,13 @@ import * as Ui from '../ui'
           <h3 class="text-sm text-black-500 mb-3">What I'm passionate about</h3>
           <div class="flex flex-wrap gap-2 mb-6">
             <Ui.UiPill>Web Development</Ui.UiPill>
-            <Ui.UiPill>Mobile Development</Ui.UiPill>
             <Ui.UiPill>UI/UX Design</Ui.UiPill>
-            <Ui.UiPill>AI/ML</Ui.UiPill>
-            <Ui.UiPill>Open Source</Ui.UiPill>
-            <Ui.UiPill>UI/UX Design</Ui.UiPill>
-            <Ui.UiPill>AI/ML</Ui.UiPill>
-            <Ui.UiPill>Open Source</Ui.UiPill>
+            <Ui.UiPill>Generative AI</Ui.UiPill>
+            <Ui.UiPill>Software Architecture</Ui.UiPill>
+            <Ui.UiPill>Techno</Ui.UiPill>
+            <Ui.UiPill>Greek mythology</Ui.UiPill>
+            <Ui.UiPill>Reading</Ui.UiPill>
+            <Ui.UiPill>Science</Ui.UiPill>
           </div>
           <Ui.UiCard>
             <template #body>

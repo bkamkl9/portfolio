@@ -5,4 +5,5 @@ import * as Sections from './components/sections'
 <template>
   <Sections.UiHeroSection />
   <Sections.UiAboutMeSection />
+  <Sections.UiSkillsSection />
 </template>

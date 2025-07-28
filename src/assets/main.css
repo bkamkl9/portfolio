@@ -4,9 +4,10 @@
   --color-black-500: #030213;
   --color-white-500: #fdfdfe;
   --color-snow-500: #fbfcfc;
-  --color-smoke-500: #eceef2;
+  --color-smoke-500: #e6e6e8;
   --color-slate-gray-500: #717182;
   --color-grain-500: #e5e5e5;
+  --color-light-gray: #cdccd0;
 
   --font-sans:
     ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol',
