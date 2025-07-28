@@ -2,13 +2,21 @@
 import { computed } from 'vue'
 
 const { size = 'md', variant = 'primary' } = defineProps<{
-  size?: 'md' | 'lg'
+  size?: 'md' | 'lg' | 'sm'
   variant?: 'primary' | 'secondary' | 'icon'
 }>()
 
 const sizeClass = computed(() => {
-  if (variant === 'icon') {
+  if (variant === 'icon' && size === 'sm') {
+    return 'p-1'
+  }
+
+  if (variant === 'icon' && size === 'md') {
     return 'p-2'
+  }
+
+  if (variant === 'icon' && size === 'lg') {
+    return 'p-3'
   }
 
   switch (size) {

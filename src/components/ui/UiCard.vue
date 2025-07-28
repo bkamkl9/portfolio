@@ -3,7 +3,7 @@
     <div class="overflow-hidden rounded-t-lg">
       <slot name="header" />
     </div>
-    <div class="p-4">
+    <div class="p-4 flex flex-col h-full">
       <slot name="body" />
     </div>
   </div>
