@@ -1,4 +1,4 @@
-name: Deply app to github pages
+name: Deploy app to github pages
 
 on:
   push:
