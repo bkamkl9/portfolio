@@ -1,13 +1,16 @@
 <script setup lang="ts">
 import * as Ui from '../ui'
 import { UiContainer } from '../layout'
+import { useI18n } from 'vue-i18n'
+
+const { t } = useI18n()
 </script>
 
 <template>
   <UiContainer class="py-24">
     <Ui.UiSectionTitle
-      title="Featured Projects"
-      description="A selection of projects I've worked on, showcasing different technologies and problem-solving approaches"
+      :title="t('landing.projects.heading')"
+      :description="t('landing.projects.paragraph')"
     />
     <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
       <Ui.UiCard>
@@ -21,7 +24,7 @@ import { UiContainer } from '../layout'
         <template #body>
           <div class="flex items-center justify-between">
             <h3 class="text-black-500 text-sm">E-Commerce Platform</h3>
-            <Ui.UiPill>Featured</Ui.UiPill>
+            <Ui.UiPill>{{ t('landing.projects.featured') }}</Ui.UiPill>
           </div>
           <p class="text-slate-gray-500 text-sm mt-2">
             A full-stack e-commerce solution with React, Node.js, and PostgreSQL. Features include
@@ -33,8 +36,12 @@ import { UiContainer } from '../layout'
             <Ui.UiPill variant="outline">PostgreSQL</Ui.UiPill>
           </div>
           <div class="flex items-center gap-2 mt-3">
-            <Ui.UiButton size="md" variant="primary">View Project</Ui.UiButton>
-            <Ui.UiButton size="md" variant="secondary">View Code</Ui.UiButton>
+            <Ui.UiButton size="md" variant="primary">{{
+              t('landing.projects.view_project')
+            }}</Ui.UiButton>
+            <Ui.UiButton size="md" variant="secondary">{{
+              t('landing.projects.view_code')
+            }}</Ui.UiButton>
           </div>
         </template>
       </Ui.UiCard>
@@ -49,7 +56,7 @@ import { UiContainer } from '../layout'
         <template #body>
           <div class="flex items-center justify-between">
             <h3 class="text-black-500 text-sm">E-Commerce Platform</h3>
-            <Ui.UiPill>Featured</Ui.UiPill>
+            <Ui.UiPill>{{ t('landing.projects.featured') }}</Ui.UiPill>
           </div>
           <p class="text-slate-gray-500 text-sm mt-2">
             A full-stack e-commerce solution with React, Node.js, and PostgreSQL. Features include
@@ -61,13 +68,19 @@ import { UiContainer } from '../layout'
             <Ui.UiPill variant="outline">PostgreSQL</Ui.UiPill>
           </div>
           <div class="flex items-center gap-2 mt-3">
-            <Ui.UiButton size="md" variant="primary">View Project</Ui.UiButton>
-            <Ui.UiButton size="md" variant="secondary">View Code</Ui.UiButton>
+            <Ui.UiButton size="md" variant="primary">{{
+              t('landing.projects.view_project')
+            }}</Ui.UiButton>
+            <Ui.UiButton size="md" variant="secondary">{{
+              t('landing.projects.view_code')
+            }}</Ui.UiButton>
           </div>
         </template>
       </Ui.UiCard>
     </div>
-    <span class="text-sm text-black-500 text-center pb-6 pt-12 w-full block">Other projects</span>
+    <span class="text-sm text-black-500 text-center pb-6 pt-12 w-full block">{{
+      t('landing.projects.other_projects')
+    }}</span>
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
       <Ui.UiCard v-for="x in 4" :key="x">
         <template #header>
@@ -91,8 +104,12 @@ import { UiContainer } from '../layout'
             <Ui.UiPill variant="outline">PostgreSQL</Ui.UiPill>
           </div>
           <div class="flex items-center gap-2 mt-3">
-            <Ui.UiButton size="md" variant="secondary" class="w-full">View Project</Ui.UiButton>
-            <Ui.UiButton size="md" variant="secondary" class="w-full">View Code</Ui.UiButton>
+            <Ui.UiButton size="md" variant="secondary" class="w-full">{{
+              t('landing.projects.view_project')
+            }}</Ui.UiButton>
+            <Ui.UiButton size="md" variant="secondary" class="w-full">{{
+              t('landing.projects.view_code')
+            }}</Ui.UiButton>
           </div>
         </template>
       </Ui.UiCard>

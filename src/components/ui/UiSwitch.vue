@@ -16,6 +16,7 @@ const isSelected = (value: T) => selected.value === value
     <div class="w-full bg-smoke-500 p-1 rounded-full relative flex gap-1">
       <button
         v-for="option in props.options"
+        :key="option.value"
         :class="{
           'w-full rounded-full text-[0.6rem] sm:text-xs font-medium text-black-500 items-center justify-center py-1 cursor-pointer flex gap-2': true,
           'bg-white-500': isSelected(option.value),

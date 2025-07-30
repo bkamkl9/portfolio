@@ -1,0 +1,95 @@
+{
+    "nav": {
+        "home": "Home",
+        "about": "About",
+        "skills": "Skills",
+        "projects": "Projects",
+        "experience": "Experience",
+        "contact": "Contact",
+        "languages": {
+            "pl": "Polski",
+            "en": "English"
+        }
+    },
+    "footer": {
+        "name": "Kamil Bartczak",
+        "paragraph": "Full Stack Developer passionate about creating exceptional digital experiences through clean code and innovative solutions.",
+        "quick_links": "Quick Links",
+        "get_in_touch": "Get In Touch",
+        "disclaimer": "All rights reserved.",
+        "built_with": "Built with {0} and {1} ❤️"
+    },
+    "landing": {
+        "hero": {
+            "heading": "Hi, I'm Kamil Bartczak",
+            "subheading": "Full Stack Developer & Software Engineer",
+            "paragraph": "I create exceptional digital experiences through clean, efficient code and innovative solutions. Passionate about building scalable applications that make a difference.",
+            "actions": {
+                "view_my_work": "View My Work",
+                "contact_me": "Contact Me"
+            }
+        },
+        "about": {
+            "heading": "About Me",
+            "paragraph": "Learn more about my journey, passions, and what drives me as a developer",
+            "my_story": "My Story",
+            "my_story_paragraph_0": "With over 5 years of experience in software development, I've had the privilege of working on diverse projects ranging from startups to enterprise solutions. My journey began with a curiosity about how things work, which evolved into a passion for creating digital experiences that solve real-world problems.",
+            "my_story_paragraph_1": "I believe in writing clean, maintainable code and staying current with emerging technologies. When I'm not coding, you'll find me contributing to open source projects, mentoring aspiring developers, or exploring the latest in AI and machine learning.",
+            "my_passions": "What I'm passionate about",
+            "stats": {
+                "projects_completed": "Projects Completed",
+                "years_of_experience": "Years of Experience"
+            }
+        },
+        "skills": {
+            "heading": "Skills & Expertise",
+            "paragraph": "A subjective overview of my technical skills and the tools I use to build exceptional software",
+            "technologies": "Technologies",
+            "skills": {
+                "frontend": "Frontend development",
+                "backend": "Backend development",
+                "database_and_cloud": "Database & Cloud",
+                "tools_and_processes": "Tools & Processes"
+            }
+        },
+        "projects": {
+            "heading": "Projects",
+            "paragraph": "A selection of projects I've worked on, showcasing different technologies and problem-solving approaches",
+            "view_project": "View Project",
+            "view_code": "View Code",
+            "featured": "Featured",
+            "other_projects": "Other Projects"
+        },
+        "experience": {
+            "heading": "Experience & Education",
+            "paragraph": "My professional journey, educational background, and continuous learning achievements",
+            "sections": {
+                "experience": "Experience",
+                "education": "Education",
+                "skills": "Skills"
+            },
+            "timeline_present": "Present",
+            "certification_issued": "Issued",
+            "key_achievements": "Key Achievements"
+        },
+        "contact": {
+            "heading": "Get In Touch",
+            "paragraph": "Have a project in mind or want to discuss opportunities? I'd love to hear from you!",
+            "lets_connect": "Let's Connect",
+            "lests_connect_paragraph": "I'm always open to discussing new projects, creative ideas, or opportunities to be part of your visions. Feel free to reach out through any of the channels below.",
+            "follow_me": "Follow Me",
+            "email": "Email",
+            "phone": "Phone",
+            "location": "Location",
+            "form": {
+                "title": "Send message",
+                "paragraph": "Fill out the form below and I'll get back to you as soon as possible.",
+                "name": "Name",
+                "email": "Email",
+                "subject": "Subject",
+                "message": "Message",
+                "send": "Send Message"
+            }
+        }
+    }
+}

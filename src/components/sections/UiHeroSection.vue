@@ -3,6 +3,9 @@ import { UiAvatar, UiButton } from '../ui'
 import { UiContainer } from '../layout'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 import { faGithub, faLinkedin, faMedium } from '@fortawesome/free-brands-svg-icons'
+import { useI18n } from 'vue-i18n'
+
+const { t } = useI18n()
 </script>
 
 <template>
@@ -12,20 +15,19 @@ import { faGithub, faLinkedin, faMedium } from '@fortawesome/free-brands-svg-ico
         <UiAvatar class="mb-6">
           <span>KB</span>
         </UiAvatar>
-        <h1 class="text-center text-sm mb-6 text-black-500">Hi, I'm Kamil Bartczak</h1>
+        <h1 class="text-center text-sm mb-6 text-black-500">{{ t('landing.hero.heading') }}</h1>
         <h2 class="text-center text-sm mb-6 text-slate-gray-500">
-          Full Stack Developer & Software Engineer
+          {{ t('landing.hero.subheading') }}
         </h2>
         <p class="text-center mb-6 max-w-2xl mx-auto text-slate-gray-500">
-          I create exceptional digital experiences through clean, efficient code and innovative
-          solutions. Passionate about building scalable applications that make a difference.
+          {{ t('landing.hero.paragraph') }}
         </p>
         <div class="flex flex-wrap gap-x-6 gap-y-4 justify-center mb-6">
           <UiButton class="min-w-[160px]" size="lg">
-            <span>View my work</span>
+            <span>{{ t('landing.hero.actions.view_my_work') }}</span>
           </UiButton>
           <UiButton class="min-w-[160px]" size="lg" variant="secondary">
-            <span>Contact me</span>
+            <span>{{ t('landing.hero.actions.contact_me') }}</span>
           </UiButton>
         </div>
         <div class="flex flex-wrap gap-2 justify-center">

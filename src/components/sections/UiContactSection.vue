@@ -3,21 +3,23 @@ import { UiContainer } from '../layout'
 import * as Ui from '../ui'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 import { faGithub } from '@fortawesome/free-brands-svg-icons'
+import { useI18n } from 'vue-i18n'
+
+const { t } = useI18n()
 </script>
 
 <template>
   <div class="bg-snow-500">
     <UiContainer class="py-24">
       <Ui.UiSectionTitle
-        title="Get In Touch"
-        description="Have a project in mind or want to discuss opportunities? I'd love to hear from you!"
+        :title="t('landing.contact.heading')"
+        :description="t('landing.contact.paragraph')"
       />
       <div class="grid grid-cols-1 md:grid-cols-2 gap-x-6 gap-y-16">
         <div class="space-y-6">
-          <h4 class="text-sm text-black-500">Let's connect</h4>
+          <h4 class="text-sm text-black-500">{{ t('landing.contact.lets_connect') }}</h4>
           <p class="text-sm text-slate-gray-500">
-            I'm always open to discussing new projects, creative ideas, or opportunities to be part
-            of your visions. Feel free to reach out through any of the channels below.
+            {{ t('landing.contact.lests_connect_paragraph') }}
           </p>
           <div class="space-y-5">
             <div class="flex items-center gap-4">
@@ -25,7 +27,7 @@ import { faGithub } from '@fortawesome/free-brands-svg-icons'
                 <FontAwesomeIcon :icon="faGithub" />
               </div>
               <div class="flex flex-col">
-                <span class="text-xs text-slate-gray-500">Email</span>
+                <span class="text-xs text-slate-gray-500">{{ t('landing.contact.email') }}</span>
                 <span class="text-sm text-black-500">
                   <a href="mailto:kamil.bartczak2023@gmail.com"> kamil.bartczak2023@gmail.com </a>
                 </span>
@@ -36,9 +38,9 @@ import { faGithub } from '@fortawesome/free-brands-svg-icons'
                 <FontAwesomeIcon :icon="faGithub" />
               </div>
               <div class="flex flex-col">
-                <span class="text-xs text-slate-gray-500">Email</span>
+                <span class="text-xs text-slate-gray-500">{{ t('landing.contact.phone') }}</span>
                 <span class="text-sm text-black-500">
-                  <a href="mailto:kamil.bartczak2023@gmail.com"> kamil.bartczak2023@gmail.com </a>
+                  <a href="tel:+48726033373"> +48 726 033 373 </a>
                 </span>
               </div>
             </div>
@@ -47,14 +49,14 @@ import { faGithub } from '@fortawesome/free-brands-svg-icons'
                 <FontAwesomeIcon :icon="faGithub" />
               </div>
               <div class="flex flex-col">
-                <span class="text-xs text-slate-gray-500">Email</span>
+                <span class="text-xs text-slate-gray-500">{{ t('landing.contact.location') }}</span>
                 <span class="text-sm text-black-500">
-                  <a href="mailto:kamil.bartczak2023@gmail.com"> kamil.bartczak2023@gmail.com </a>
+                  <a href="https://maps.app.goo.gl/1234567890"> Zielona Góra, Poland </a>
                 </span>
               </div>
             </div>
           </div>
-          <span class="text-sm text-black-500">Follow me</span>
+          <span class="text-sm text-black-500">{{ t('landing.contact.follow_me') }}</span>
           <div class="flex items-center gap-4 mt-3">
             <Ui.UiButton variant="icon" class="bg-smoke-500 text-black-500" size="sm">
               <FontAwesomeIcon :icon="faGithub" />
@@ -72,20 +74,34 @@ import { faGithub } from '@fortawesome/free-brands-svg-icons'
             <template #body>
               <div class="flex flex-col h-full gap-6">
                 <div class="flex flex-col gap-1">
-                  <span class="text-sm text-black-500">Send Message</span>
+                  <span class="text-sm text-black-500">{{ t('landing.contact.form.title') }}</span>
                   <p class="text-sm text-slate-gray-500">
-                    Fill out the form below and I'll get back to you as soon as possible.
+                    {{ t('landing.contact.form.paragraph') }}
                   </p>
                 </div>
                 <div class="gap-4 my-auto grid grid-cols-2">
-                  <Ui.UiInput label="Name" placeholder="Name" />
-                  <Ui.UiInput label="Email" placeholder="Email" />
-                  <Ui.UiInput label="Subject" placeholder="Subject" class="col-span-2" />
-                  <Ui.UiInput label="Message" placeholder="Message" class="col-span-2" />
+                  <Ui.UiInput
+                    :label="t('landing.contact.form.name')"
+                    :placeholder="t('landing.contact.form.name')"
+                  />
+                  <Ui.UiInput
+                    :label="t('landing.contact.form.email')"
+                    :placeholder="t('landing.contact.form.email')"
+                  />
+                  <Ui.UiInput
+                    :label="t('landing.contact.form.subject')"
+                    :placeholder="t('landing.contact.form.subject')"
+                    class="col-span-2"
+                  />
+                  <Ui.UiInput
+                    :label="t('landing.contact.form.message')"
+                    :placeholder="t('landing.contact.form.message')"
+                    class="col-span-2"
+                  />
                 </div>
                 <div class="grid grid-cols-2">
                   <Ui.UiButton size="md" variant="primary" class="w-full col-span-2">
-                    Send Message
+                    {{ t('landing.contact.form.send') }}
                   </Ui.UiButton>
                 </div>
               </div>

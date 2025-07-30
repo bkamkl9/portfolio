@@ -1,8 +1,10 @@
 <script setup lang="ts">
 import { Icon } from '@iconify/vue'
 import { ref } from 'vue'
+import { useI18n } from 'vue-i18n'
 
 const isMenuOpen = ref(false)
+const { locale, t } = useI18n()
 </script>
 
 <template>
@@ -34,6 +36,20 @@ const isMenuOpen = ref(false)
           @click="isMenuOpen = !isMenuOpen"
         >
           <Icon :icon="isMenuOpen ? 'solar:close-square-linear' : 'solar:hamburger-menu-outline'" />
+        </button>
+        <button
+          class="ml-2 text-sm flex items-center gap-1"
+          v-if="locale === 'en'"
+          @click="locale = 'pl'"
+        >
+          <Icon icon="ion:language-sharp" /> {{ t('nav.languages.en') }}
+        </button>
+        <button
+          class="ml-2 text-sm flex items-center gap-1"
+          v-if="locale === 'pl'"
+          @click="locale = 'en'"
+        >
+          <Icon icon="ion:language-sharp" /> {{ t('nav.languages.pl') }}
         </button>
       </div>
     </div>

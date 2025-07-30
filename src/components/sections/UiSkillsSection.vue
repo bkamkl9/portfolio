@@ -3,12 +3,15 @@ import { UiContainer } from '../layout'
 import * as Ui from '../ui'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 import { faGithub } from '@fortawesome/free-brands-svg-icons'
+import { useI18n } from 'vue-i18n'
+
+const { t } = useI18n()
 
 const skills = [
   {
     id: 1,
     icon: faGithub,
-    title: 'Frontend development',
+    title: t('landing.skills.skills.frontend'),
     progress: [
       { id: 1, title: 'Vue.js', value: 95 },
       { id: 2, title: 'Typescript', value: 95 },
@@ -30,7 +33,7 @@ const skills = [
   {
     id: 2,
     icon: faGithub,
-    title: 'Backend development',
+    title: t('landing.skills.skills.backend'),
     progress: [
       { id: 1, title: 'Python', value: 60 },
       { id: 2, title: 'FastApi', value: 60 },
@@ -42,7 +45,7 @@ const skills = [
   {
     id: 3,
     icon: faGithub,
-    title: 'Database & Cloud',
+    title: t('landing.skills.skills.database_and_cloud'),
     progress: [
       { id: 1, title: 'PostgreSQL', value: 60 },
       { id: 2, title: 'AWS', value: 30 },
@@ -63,7 +66,7 @@ const skills = [
   {
     id: 4,
     icon: faGithub,
-    title: 'Tools & Processes',
+    title: t('landing.skills.skills.tools_and_processes'),
     progress: [
       { id: 1, title: 'Software Architecture', value: 70 },
       { id: 2, title: 'Git/GitHub/GitLab', value: 80 },
@@ -86,8 +89,8 @@ const skills = [
   <div class="bg-snow-500">
     <UiContainer class="py-24">
       <Ui.UiSectionTitle
-        title="Skills & Expertise"
-        description="A subjective overview of my technical skills and the tools I use to build exceptional software"
+        :title="t('landing.skills.heading')"
+        :description="t('landing.skills.paragraph')"
       />
       <div class="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6 lg:gap-8">
         <Ui.UiCard v-for="skill in skills" :key="skill.id">
@@ -107,7 +110,7 @@ const skills = [
               />
             </div>
             <div>
-              <span class="text-xs text-black-500">Technologies</span>
+              <span class="text-xs text-black-500">{{ t('landing.skills.technologies') }}</span>
               <div class="flex flex-wrap gap-2 mt-2">
                 <Ui.UiPill
                   variant="outline"
