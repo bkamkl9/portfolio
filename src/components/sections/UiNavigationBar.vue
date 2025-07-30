@@ -16,19 +16,19 @@ const { locale, t } = useI18n()
         <div class="text-sm font-bold">Kamil Bartczak</div>
         <ul class="gap-4 text-sm text-slate-gray-500 hidden md:flex">
           <li>
-            <a href="#" class="hover:underline">Home</a>
+            <a href="#" class="hover:underline">{{ t('nav.home') }}</a>
           </li>
           <li>
-            <a href="#" class="hover:underline">About</a>
+            <a href="#" class="hover:underline">{{ t('nav.about') }}</a>
           </li>
           <li>
-            <a href="#" class="hover:underline">Contact</a>
+            <a href="#" class="hover:underline">{{ t('nav.contact') }}</a>
           </li>
           <li>
-            <a href="#" class="hover:underline">Projects</a>
+            <a href="#" class="hover:underline">{{ t('nav.projects') }}</a>
           </li>
           <li>
-            <a href="#" class="hover:underline">Experience</a>
+            <a href="#" class="hover:underline">{{ t('nav.experience') }}</a>
           </li>
         </ul>
         <button
