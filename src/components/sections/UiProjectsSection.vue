@@ -2,8 +2,20 @@
 import * as Ui from '../ui'
 import { UiContainer } from '../layout'
 import { useI18n } from 'vue-i18n'
+import useContent from '@/composable/useContent'
+import { computed } from 'vue'
 
 const { t } = useI18n()
+const content = await useContent('projects')
+
+const featuredProjects = computed(() => {
+  if (content) {
+    return content.value.filter((project: any) => project.is_featured)
+  }
+  return []
+})
+
+const otherProjects = computed(() => content.value.filter((project: any) => !project.is_featured))
 </script>
 
 <template>
@@ -13,7 +25,7 @@ const { t } = useI18n()
       :description="t('landing.projects.paragraph')"
     />
     <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-      <Ui.UiCard>
+      <Ui.UiCard v-for="project in featuredProjects" :key="project.title">
         <template #header>
           <img
             src="https://placehold.co/600x400"
@@ -23,57 +35,34 @@ const { t } = useI18n()
         </template>
         <template #body>
           <div class="flex items-center justify-between">
-            <h3 class="text-black-500 text-sm">E-Commerce Platform</h3>
+            <h3 class="text-black-500 text-sm">{{ project.title }}</h3>
             <Ui.UiPill>{{ t('landing.projects.featured') }}</Ui.UiPill>
           </div>
           <p class="text-slate-gray-500 text-sm mt-2">
-            A full-stack e-commerce solution with React, Node.js, and PostgreSQL. Features include
-            user authentication, payment processing, inventory management, and admin dashboard.
+            {{ project.description }}
           </p>
           <div class="flex items-center gap-2 mt-4">
-            <Ui.UiPill variant="outline">React</Ui.UiPill>
-            <Ui.UiPill variant="outline">Node.js</Ui.UiPill>
-            <Ui.UiPill variant="outline">PostgreSQL</Ui.UiPill>
+            <Ui.UiPill variant="outline" v-for="tag in project.tags" :key="tag">{{
+              tag
+            }}</Ui.UiPill>
           </div>
           <div class="flex items-center gap-2 mt-3">
-            <Ui.UiButton size="md" variant="primary">{{
-              t('landing.projects.view_project')
-            }}</Ui.UiButton>
-            <Ui.UiButton size="md" variant="secondary">{{
-              t('landing.projects.view_code')
-            }}</Ui.UiButton>
-          </div>
-        </template>
-      </Ui.UiCard>
-      <Ui.UiCard>
-        <template #header>
-          <img
-            src="https://placehold.co/600x400"
-            alt="Project 1"
-            class="w-full h-full object-cover aspect-video"
-          />
-        </template>
-        <template #body>
-          <div class="flex items-center justify-between">
-            <h3 class="text-black-500 text-sm">E-Commerce Platform</h3>
-            <Ui.UiPill>{{ t('landing.projects.featured') }}</Ui.UiPill>
-          </div>
-          <p class="text-slate-gray-500 text-sm mt-2">
-            A full-stack e-commerce solution with React, Node.js, and PostgreSQL. Features include
-            user authentication, payment processing, inventory management, and admin dashboard.
-          </p>
-          <div class="flex items-center gap-2 mt-4">
-            <Ui.UiPill variant="outline">React</Ui.UiPill>
-            <Ui.UiPill variant="outline">Node.js</Ui.UiPill>
-            <Ui.UiPill variant="outline">PostgreSQL</Ui.UiPill>
-          </div>
-          <div class="flex items-center gap-2 mt-3">
-            <Ui.UiButton size="md" variant="primary">{{
-              t('landing.projects.view_project')
-            }}</Ui.UiButton>
-            <Ui.UiButton size="md" variant="secondary">{{
-              t('landing.projects.view_code')
-            }}</Ui.UiButton>
+            <Ui.UiButton
+              size="md"
+              variant="primary"
+              :href="project.links.view_project"
+              v-if="project.links.view_project"
+            >
+              {{ t('landing.projects.view_project') }}
+            </Ui.UiButton>
+            <Ui.UiButton
+              size="md"
+              variant="secondary"
+              :href="project.links.view_code"
+              v-if="project.links.view_code"
+            >
+              {{ t('landing.projects.view_code') }}
+            </Ui.UiButton>
           </div>
         </template>
       </Ui.UiCard>
@@ -82,7 +71,7 @@ const { t } = useI18n()
       t('landing.projects.other_projects')
     }}</span>
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-      <Ui.UiCard v-for="x in 4" :key="x">
+      <Ui.UiCard v-for="project in otherProjects" :key="project.title">
         <template #header>
           <img
             src="https://placehold.co/600x400"
@@ -92,24 +81,35 @@ const { t } = useI18n()
         </template>
         <template #body>
           <div class="flex items-center justify-between">
-            <h3 class="text-black-500 text-sm">E-Commerce Platform</h3>
+            <h3 class="text-black-500 text-sm">{{ project.title }}</h3>
           </div>
           <p class="text-slate-gray-500 text-xs mt-3">
-            A full-stack e-commerce solution with React, Node.js, and PostgreSQL. Features include
-            user authentication, payment processing, inventory management, and admin dashboard.
+            {{ project.description }}
           </p>
           <div class="flex items-center gap-2 mt-4">
-            <Ui.UiPill variant="outline">React</Ui.UiPill>
-            <Ui.UiPill variant="outline">Node.js</Ui.UiPill>
-            <Ui.UiPill variant="outline">PostgreSQL</Ui.UiPill>
+            <Ui.UiPill variant="outline" v-for="tag in project.tags" :key="tag">{{
+              tag
+            }}</Ui.UiPill>
           </div>
           <div class="flex items-center gap-2 mt-3">
-            <Ui.UiButton size="md" variant="secondary" class="w-full">{{
-              t('landing.projects.view_project')
-            }}</Ui.UiButton>
-            <Ui.UiButton size="md" variant="secondary" class="w-full">{{
-              t('landing.projects.view_code')
-            }}</Ui.UiButton>
+            <Ui.UiButton
+              size="md"
+              variant="secondary"
+              class="w-full"
+              v-if="project.links.view_project"
+              :href="project.links.view_project"
+            >
+              {{ t('landing.projects.view_project') }}
+            </Ui.UiButton>
+            <Ui.UiButton
+              size="md"
+              variant="secondary"
+              class="w-full"
+              v-if="project.links.view_code"
+              :href="project.links.view_code"
+            >
+              {{ t('landing.projects.view_code') }}
+            </Ui.UiButton>
           </div>
         </template>
       </Ui.UiCard>

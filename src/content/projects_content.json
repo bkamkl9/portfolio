@@ -1,0 +1,126 @@
+{
+    "pl": [
+        {
+            "title": "E-Commerce Platform",
+            "is_featured": true,
+            "description": "A full-stack e-commerce solution with React, Node.js, and PostgreSQL. Features include user authentication, payment processing, inventory management, and admin dashboard.",
+            "tags": ["React", "Node.js", "PostgreSQL"],
+            "links": {
+                "view_project": "https://example.com",
+                "view_code": "https://github.com/example/project"
+            }
+        },
+        {
+            "title": "E-Commerce Platform",
+            "is_featured": true,
+            "description": "A full-stack e-commerce solution with React, Node.js, and PostgreSQL. Features include user authentication, payment processing, inventory management, and admin dashboard.",
+            "tags": ["React", "Node.js", "PostgreSQL"],
+            "links": {
+                "view_project": "https://example.com",
+                "view_code": "https://github.com/example/project"
+            }
+        },
+        {
+            "title": "E-Commerce Platform",
+            "is_featured": false,
+            "description": "A full-stack e-commerce solution with React, Node.js, and PostgreSQL. Features include user authentication, payment processing, inventory management, and admin dashboard.",
+            "tags": ["React", "Node.js", "PostgreSQL"],
+            "links": {
+                "view_project": "https://example.com",
+                "view_code": "https://github.com/example/project"
+            }
+        },
+        {
+            "title": "E-Commerce Platform",
+            "is_featured": false,
+            "description": "A full-stack e-commerce solution with React, Node.js, and PostgreSQL. Features include user authentication, payment processing, inventory management, and admin dashboard.",
+            "tags": ["React", "Node.js", "PostgreSQL"],
+            "links": {
+                "view_project": "https://example.com",
+                "view_code": "https://github.com/example/project"
+            }
+        },
+        {
+            "title": "E-Commerce Platform",
+            "is_featured": false,
+            "description": "A full-stack e-commerce solution with React, Node.js, and PostgreSQL. Features include user authentication, payment processing, inventory management, and admin dashboard.",
+            "tags": ["React", "Node.js", "PostgreSQL"],
+            "links": {
+                "view_project": "https://example.com",
+                "view_code": "https://github.com/example/project"
+            }
+        },
+        {
+            "title": "E-Commerce Platform",
+            "is_featured": false,
+            "description": "A full-stack e-commerce solution with React, Node.js, and PostgreSQL. Features include user authentication, payment processing, inventory management, and admin dashboard.",
+            "tags": ["React", "Node.js", "PostgreSQL"],
+            "links": {
+                "view_project": "https://example.com",
+                "view_code": "https://github.com/example/project"
+            }
+        }
+    ],
+    "en": [
+        {
+            "title": "E-Commerce Platform",
+            "is_featured": true,
+            "description": "A full-stack e-commerce solution with React, Node.js, and PostgreSQL. Features include user authentication, payment processing, inventory management, and admin dashboard.",
+            "tags": ["React", "Node.js", "PostgreSQL"],
+            "links": {
+                "view_project": "https://example.com",
+                "view_code": "https://github.com/example/project"
+            }
+        },
+        {
+            "title": "E-Commerce Platform",
+            "is_featured": true,
+            "description": "A full-stack e-commerce solution with React, Node.js, and PostgreSQL. Features include user authentication, payment processing, inventory management, and admin dashboard.",
+            "tags": ["React", "Node.js", "PostgreSQL"],
+            "links": {
+                "view_project": "https://example.com",
+                "view_code": "https://github.com/example/project"
+            }
+        },
+        {
+            "title": "E-Commerce Platform",
+            "is_featured": false,
+            "description": "A full-stack e-commerce solution with React, Node.js, and PostgreSQL. Features include user authentication, payment processing, inventory management, and admin dashboard.",
+            "tags": ["React", "Node.js", "PostgreSQL"],
+            "links": {
+                "view_project": "https://example.com",
+                "view_code": "https://github.com/example/project"
+            }
+        },
+        {
+            "title": "E-Commerce Platform",
+            "is_featured": false,
+            "description": "A full-stack e-commerce solution with React, Node.js, and PostgreSQL. Features include user authentication, payment processing, inventory management, and admin dashboard.",
+            "tags": ["React", "Node.js", "PostgreSQL"],
+            "links": {
+                "view_project": "https://example.com",
+                "view_code": "https://github.com/example/project"
+            }
+        },
+        {
+            "title": "E-Commerce Platform",
+            "is_featured": false,
+            "description": "A full-stack e-commerce solution with React, Node.js, and PostgreSQL. Features include user authentication, payment processing, inventory management, and admin dashboard.",
+            "tags": ["React", "Node.js", "PostgreSQL"],
+            "links": {
+                "view_project": "https://example.com",
+                "view_code": "https://github.com/example/project"
+            }
+        },
+        {
+            "title": "E-Commerce Platform",
+            "is_featured": false,
+            "description": "A full-stack e-commerce solution with React, Node.js, and PostgreSQL. Features include user authentication, payment processing, inventory management, and admin dashboard.",
+            "tags": ["React", "Node.js", "PostgreSQL"],
+            "links": {
+                "view_project": "https://example.com",
+                "view_code": "https://github.com/example/project"
+            }
+        }
+    ]
+}

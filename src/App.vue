@@ -8,7 +8,9 @@ import { UiNavigationBar } from './components/sections'
   <Sections.UiHeroSection />
   <Sections.UiAboutMeSection />
   <Sections.UiSkillsSection />
-  <Sections.UiProjectsSection />
+  <Suspense>
+    <Sections.UiProjectsSection />
+  </Suspense>
   <Sections.UiExperienceSection />
   <Sections.UiContactSection />
   <Sections.UiFooterSection />
