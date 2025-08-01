@@ -1,41 +1,43 @@
 import { Plugin } from "vite";
-import { existsSync, mkdirSync, readFileSync, writeFileSync } from "node:fs";
+import { existsSync, readFileSync, unlinkSync, writeFileSync } from "node:fs";
 import path from "node:path";
 
 const AVAILABLE_LANGUAGES = ["en", "pl"];
+const root = path.resolve();
 
 export default function localizationPlugin(): Plugin {
     return {
         name: "localization-plugin",
         apply: "build",
-        generateBundle(options) {
-            const outDir = options.dir || "dist";
-
-            // Ensure output directory exists
-            if (!existsSync(outDir)) {
-                mkdirSync(outDir, { recursive: true });
-            }
-
-            const defaultHtmlFilePath = path.join(path.resolve(), "index.html");
-            const defaultHtmlContent = readFileSync(
-                defaultHtmlFilePath,
-                "utf-8",
-            );
+        config() {
+            const indexHtmlPath = path.join(root, "index.html");
+            const defaultHtmlContent = readFileSync(indexHtmlPath, "utf-8");
+            const inputs: Record<string, string> = { index: indexHtmlPath };
 
             AVAILABLE_LANGUAGES.forEach((lang) => {
-                const langHtmlFilePath = path.join(
-                    path.resolve(),
-                    `${lang}.html`,
-                );
-                const newHtmlContent = defaultHtmlContent.replace(
+                const langHtmlPath = path.join(root, `${lang}.html`);
+                const langHtmlContent = defaultHtmlContent.replace(
                     'lang="en"',
                     `lang="${lang}"`,
                 );
-                writeFileSync(
-                    path.join(outDir, `${lang}.html`),
-                    newHtmlContent,
-                    "utf-8",
-                );
+                writeFileSync(langHtmlPath, langHtmlContent, "utf-8");
+                inputs[lang] = langHtmlPath;
+            });
+
+            return {
+                build: {
+                    rollupOptions: {
+                        input: inputs,
+                    },
+                },
+            };
+        },
+        buildEnd() {
+            AVAILABLE_LANGUAGES.forEach((lang) => {
+                const langHtmlPath = path.join(root, `${lang}.html`);
+                if (existsSync(langHtmlPath)) {
+                    unlinkSync(langHtmlPath);
+                }
             });
         },
     };
