@@ -2,9 +2,15 @@
 import { Icon } from '@iconify/vue'
 import { ref } from 'vue'
 import { useI18n } from 'vue-i18n'
+import { useRouter } from 'vue-router'
 
+const router = useRouter()
 const isMenuOpen = ref(false)
 const { locale, t } = useI18n()
+
+function handleLocaleChange(lang: string) {
+  router.push(`/${lang}`)
+}
 </script>
 
 <template>
@@ -40,14 +46,14 @@ const { locale, t } = useI18n()
         <button
           class="ml-2 text-sm flex items-center gap-1"
           v-if="locale === 'en'"
-          @click="locale = 'pl'"
+          @click="handleLocaleChange('pl')"
         >
           <Icon icon="ion:language-sharp" /> {{ t('nav.languages.en') }}
         </button>
         <button
           class="ml-2 text-sm flex items-center gap-1"
           v-if="locale === 'pl'"
-          @click="locale = 'en'"
+          @click="handleLocaleChange('en')"
         >
           <Icon icon="ion:language-sharp" /> {{ t('nav.languages.pl') }}
         </button>
