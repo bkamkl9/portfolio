@@ -1,5 +1,5 @@
 import { Plugin } from "vite";
-import { readFileSync, writeFileSync } from "node:fs";
+import { existsSync, mkdirSync, readFileSync, writeFileSync } from "node:fs";
 import path from "node:path";
 
 const AVAILABLE_LANGUAGES = ["en", "pl"];
@@ -10,6 +10,12 @@ export default function localizationPlugin(): Plugin {
         apply: "build",
         generateBundle(options) {
             const outDir = options.dir || "dist";
+
+            // Ensure output directory exists
+            if (!existsSync(outDir)) {
+                mkdirSync(outDir, { recursive: true });
+            }
+
             const defaultHtmlFilePath = path.join(path.resolve(), "index.html");
             const defaultHtmlContent = readFileSync(
                 defaultHtmlFilePath,
