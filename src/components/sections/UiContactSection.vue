@@ -17,7 +17,7 @@ const { t } = useI18n()
       />
       <div class="grid grid-cols-1 md:grid-cols-2 gap-x-6 gap-y-16">
         <div class="space-y-6">
-          <h4 class="text-sm text-black-500">{{ t('landing.contact.lets_connect') }}</h4>
+          <h3 class="text-sm text-black-500">{{ t('landing.contact.lets_connect') }}</h3>
           <p class="text-sm text-slate-gray-500">
             {{ t('landing.contact.lests_connect_paragraph') }}
           </p>
@@ -58,13 +58,28 @@ const { t } = useI18n()
           </div>
           <span class="text-sm text-black-500">{{ t('landing.contact.follow_me') }}</span>
           <div class="flex items-center gap-4 mt-3">
-            <Ui.UiButton variant="icon" class="bg-smoke-500 text-black-500" size="sm">
+            <Ui.UiButton
+              variant="icon"
+              class="bg-smoke-500 text-black-500"
+              size="sm"
+              title="Github"
+            >
               <FontAwesomeIcon :icon="faGithub" />
             </Ui.UiButton>
-            <Ui.UiButton variant="icon" class="bg-smoke-500 text-black-500" size="sm">
+            <Ui.UiButton
+              variant="icon"
+              class="bg-smoke-500 text-black-500"
+              size="sm"
+              title="Linkedin"
+            >
               <FontAwesomeIcon :icon="faGithub" />
             </Ui.UiButton>
-            <Ui.UiButton variant="icon" class="bg-smoke-500 text-black-500" size="sm">
+            <Ui.UiButton
+              variant="icon"
+              class="bg-smoke-500 text-black-500"
+              size="sm"
+              title="Medium"
+            >
               <FontAwesomeIcon :icon="faGithub" />
             </Ui.UiButton>
           </div>
@@ -81,19 +96,23 @@ const { t } = useI18n()
                 </div>
                 <div class="gap-4 my-auto grid grid-cols-2">
                   <Ui.UiInput
+                    id="form-name"
                     :label="t('landing.contact.form.name')"
                     :placeholder="t('landing.contact.form.name')"
                   />
                   <Ui.UiInput
+                    id="form-email"
                     :label="t('landing.contact.form.email')"
                     :placeholder="t('landing.contact.form.email')"
                   />
                   <Ui.UiInput
+                    id="form-subject"
                     :label="t('landing.contact.form.subject')"
                     :placeholder="t('landing.contact.form.subject')"
                     class="col-span-2"
                   />
                   <Ui.UiInput
+                    id="form-message"
                     :label="t('landing.contact.form.message')"
                     :placeholder="t('landing.contact.form.message')"
                     class="col-span-2"

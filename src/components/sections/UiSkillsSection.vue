@@ -97,7 +97,7 @@ const skills = [
           <template #header>
             <div class="flex items-center gap-2 p-4">
               <FontAwesomeIcon :icon="skill.icon" />
-              <h4 class="text-sm">{{ skill.title }}</h4>
+              <h3 class="text-sm">{{ skill.title }}</h3>
             </div>
           </template>
           <template #body>

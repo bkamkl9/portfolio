@@ -4,6 +4,7 @@ import { computed } from 'vue'
 const { size = 'md', variant = 'primary' } = defineProps<{
   size?: 'md' | 'lg' | 'sm'
   variant?: 'primary' | 'secondary' | 'icon'
+  title?: string
 }>()
 
 const sizeClass = computed(() => {
@@ -43,6 +44,7 @@ const variantClass = computed(() => {
   <button
     class="inline-flex items-center justify-center gap-2 whitespace-nowrap font-medium rounded-md cursor-pointer"
     :class="[sizeClass, variantClass]"
+    :title="title"
   >
     <slot />
   </button>

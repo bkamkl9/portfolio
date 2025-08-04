@@ -31,13 +31,13 @@ const { t } = useI18n()
           </UiButton>
         </div>
         <div class="flex flex-wrap gap-2 justify-center">
-          <UiButton variant="icon">
+          <UiButton variant="icon" title="Github">
             <FontAwesomeIcon :icon="faGithub" />
           </UiButton>
-          <UiButton variant="icon">
+          <UiButton variant="icon" title="Linkedin">
             <FontAwesomeIcon :icon="faLinkedin" />
           </UiButton>
-          <UiButton variant="icon">
+          <UiButton variant="icon" title="Medium">
             <FontAwesomeIcon :icon="faMedium" />
           </UiButton>
         </div>
