@@ -11,7 +11,9 @@ import { UiNavigationBar } from './components/sections'
   <Suspense>
     <Sections.UiProjectsSection />
   </Suspense>
-  <Sections.UiExperienceSection />
+  <Suspense>
+    <Sections.UiExperienceSection />
+  </Suspense>
   <Sections.UiContactSection />
   <Sections.UiFooterSection />
 </template>

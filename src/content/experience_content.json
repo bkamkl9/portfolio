@@ -1,0 +1,176 @@
+{
+  "pl": {
+    "experience": [
+      {
+        "title": "Inżynier Oprogramowania",
+        "company": "Infermedica",
+        "location": "Wrocław / Zdalnie",
+        "date": "2021 - 2025",
+        "description": "Początkowo pracowałem w zespole Delivery, dostarczając główny produkt i rozwiązując problemy klientów. Współpracowałem z różnymi zespołami takimi jak Customer Success, Design, Implementation i Core Product. W miarę bliskiej współpracy z zespołem produktowym, przejąłem odpowiedzialność za rozwój produktu. Uczestniczyłem w innowacyjnych badaniach z lekarzami, a następnie dołączyłem do zespołu intelligent core, gdzie skupiałem się na zaawansowanych technologiach jak LLM i NLP.",
+        "achievements": [
+          "Przejście z zespołu Delivery do zespołu produktowego",
+          "Współpraca w badaniach z lekarzami",
+          "Specjalizacja w technologiach LLM i NLP",
+          "Współpraca z wieloma zespołami międzyfunkcyjnymi"
+        ],
+        "tags": [
+          "Python",
+          "LLM",
+          "NLP",
+          "Healthcare",
+          "Product Development",
+          "Typescript",
+          "Frontend",
+          "Backend"
+        ]
+      },
+      {
+        "title": "Frontend Developer",
+        "company": "Denley.pl",
+        "location": "Zielona Góra",
+        "date": "2021",
+        "description": "Pełniłem rolę Frontend Engineer, odpowiedzialnego za utrzymanie i optymalizację strony e-commerce. Ściśle współpracowałem z zespołem marketingowym, zapewniając płynną integrację designu i funkcjonalności w celu poprawy doświadczeń użytkowników.",
+        "achievements": [
+          "Optymalizacja strony e-commerce",
+          "Współpraca z zespołem marketingowym",
+          "Poprawa doświadczeń użytkowników"
+        ],
+        "tags": ["Frontend", "E-commerce", "JavaScript", "UX"]
+      },
+      {
+        "title": "Full-stack Developer",
+        "company": "BlazeYourPrint",
+        "location": "Zdalnie",
+        "date": "2020 - 2021",
+        "description": "Służyłem jako inżynier oprogramowania odpowiedzialny za rozwój kompleksowej platformy e-commerce dla klienta. Obejmowało to stworzenie niestandardowego kreatora produktów, implementację dashboardu do efektywnego zarządzania klientami i produktami, projektowanie systemu rabatów, optymalizację procesu checkout oraz tworzenie angażującej strony landing.",
+        "achievements": [
+          "Rozwój kompletnej platformy e-commerce",
+          "Stworzenie niestandardowego kreatora produktów",
+          "Implementacja systemu zarządzania i rabatów",
+          "Optymalizacja procesu zakupowego"
+        ],
+        "tags": ["Full-stack", "E-commerce", "Typescript", "Product Builder"]
+      }
+    ],
+    "education": [
+      {
+        "title": "Technik Informatyk",
+        "school": "ECKZiU",
+        "location": "Gubin",
+        "date": "2020 - 2021",
+        "description": "Edukacja w dziedzinie technologii informatycznych z fokusem na praktyczne aspekty programowania i rozwoju oprogramowania.",
+        "achievements": [
+          "Ukończenie kierunku Informatyka",
+          "Zdobycie podstaw programowania i rozwoju oprogramowania"
+        ]
+      }
+    ],
+    "skills": [
+      {
+        "certification": "Python Programming",
+        "subject": "Python",
+        "year": 2023,
+        "credential_id": "PY-ADV-001"
+      },
+      {
+        "certification": "JavaScript & TypeScript",
+        "subject": "Frontend Development",
+        "year": 2023,
+        "credential_id": "JS-TS-002"
+      },
+      {
+        "certification": "Vue.js Ecosystem",
+        "subject": "Vue, Nuxt, Pinia",
+        "year": 2023,
+        "credential_id": "VUE-ECO-003"
+      }
+    ]
+  },
+  "en": {
+    "experience": [
+      {
+        "title": "Software Engineer",
+        "company": "Infermedica",
+        "location": "Wrocław / Remote",
+        "date": "2021 - 2025",
+        "description": "Initially worked in the Delivery team, delivering the main product, resolving client issues, and maintaining strong customer relationships. Collaborated with various teams such as Customer Success, Design, Implementation, and Core Product. As I closely worked with the product team, I eventually took on responsibilities for product development. Participated in innovative research with medical doctors and later joined the intelligent core team, focusing on advanced technologies like LLM and NLP.",
+        "achievements": [
+          "Transitioned from Delivery team to product development role",
+          "Collaborated in innovative research with medical doctors",
+          "Specialized in LLM and NLP technologies",
+          "Cross-functional collaboration with multiple teams"
+        ],
+        "tags": [
+          "Python",
+          "LLM",
+          "NLP",
+          "Healthcare",
+          "Product Development",
+          "Typescript",
+          "Frontend",
+          "Backend"
+        ]
+      },
+      {
+        "title": "Frontend Developer",
+        "company": "Denley.pl",
+        "location": "Zielona Góra",
+        "date": "2021",
+        "description": "Held the role of Frontend Engineer, responsible for maintaining and optimizing the e-commerce website. Collaborated closely with the marketing team, ensuring seamless integration of design and functionality to enhance the user experience.",
+        "achievements": [
+          "Optimized e-commerce website performance",
+          "Collaborated with marketing team for better UX",
+          "Enhanced user experience through design-functionality integration"
+        ],
+        "tags": ["Frontend", "E-commerce", "JavaScript", "UX"]
+      },
+      {
+        "title": "Full-stack Developer",
+        "company": "BlazeYourPrint",
+        "location": "Remote",
+        "date": "2020 - 2021",
+        "description": "Served as a software engineer tasked with developing a comprehensive e-commerce platform for the client. This encompassed creating a custom product builder, implementing a dashboard for efficient customer and product management, designing a discount system, optimizing the checkout process, and crafting an engaging landing page.",
+        "achievements": [
+          "Developed comprehensive e-commerce platform",
+          "Created custom product builder from scratch",
+          "Implemented management dashboard and discount system",
+          "Optimized checkout process and user engagement"
+        ],
+        "tags": ["Full-stack", "E-commerce", "Typescript", "Product Builder"]
+      }
+    ],
+    "education": [
+      {
+        "title": "Information Technology",
+        "school": "ECKZiU",
+        "location": "Gubin",
+        "date": "2020 - 2021",
+        "description": "Education in information technology with focus on practical aspects of programming and software development.",
+        "achievements": [
+          "Completed Information Technology program",
+          "Gained foundation in programming and software development"
+        ]
+      }
+    ],
+    "skills": [
+      {
+        "certification": "Python Programming",
+        "subject": "Python",
+        "year": 2023,
+        "credential_id": "PY-ADV-001"
+      },
+      {
+        "certification": "JavaScript & TypeScript",
+        "subject": "Frontend Development",
+        "year": 2023,
+        "credential_id": "JS-TS-002"
+      },
+      {
+        "certification": "Vue.js Ecosystem",
+        "subject": "Vue, Nuxt, Pinia",
+        "year": 2023,
+        "credential_id": "VUE-ECO-003"
+      }
+    ]
+  }
+}
