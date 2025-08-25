@@ -5,6 +5,8 @@ import * as Ui from '../ui'
 import { faGithub } from '@fortawesome/free-brands-svg-icons'
 import { useI18n } from 'vue-i18n'
 import useContent from '@/composable/useContent'
+import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
+import { Icon } from '@iconify/vue'
 
 const { t } = useI18n()
 const content = await useContent('experience')
@@ -104,6 +106,19 @@ const selected = ref<string>(switchOptions.value[1].value)
             </div>
           </template>
         </Ui.UiCard>
+      </div>
+      <div
+        class="col-span-3 rounded-lg border border-smoke-500 px-4 py-6 text-center bg-secondary-bg mt-8"
+      >
+        <span class="text-black-500 text-sm font-medium flex items-center justify-center gap-2">
+          <Icon icon="mingcute:certificate-fill" class="text-lg" />
+          Continuous Learning Journey
+        </span>
+        <p class="text-slate-gray-500 text-xs mt-4 max-w-lg mx-auto leading-relaxed">
+          I believe in staying current with industry trends and continuously expanding my skill set
+          through professional certifications and hands-on learning. These certifications represent
+          my commitment to excellence and expertise in various technologies.
+        </p>
       </div>
     </UiContainer>
   </div>

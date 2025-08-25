@@ -67,22 +67,16 @@
     ],
     "skills": [
       {
-        "certification": "Python Programming",
-        "subject": "Python",
-        "year": 2023,
-        "credential_id": "PY-ADV-001"
+        "certification": "Vue - The Complete Guide (incl. Router & Composition API)",
+        "subject": "Udemy",
+        "year": 2022,
+        "credential_id": "UC-cc53d2c7-185d-4882-bae4-9883e4812eef"
       },
       {
-        "certification": "JavaScript & TypeScript",
-        "subject": "Frontend Development",
-        "year": 2023,
-        "credential_id": "JS-TS-002"
-      },
-      {
-        "certification": "Vue.js Ecosystem",
-        "subject": "Vue, Nuxt, Pinia",
-        "year": 2023,
-        "credential_id": "VUE-ECO-003"
+        "certification": "MongoDB - The Complete Developer's Guide",
+        "subject": "Udemy",
+        "year": 2022,
+        "credential_id": "UC-b66fe33f-03ff-4ffa-b0f2-ef0b6ed00520"
       }
     ]
   },
@@ -154,22 +148,16 @@
     ],
     "skills": [
       {
-        "certification": "Python Programming",
-        "subject": "Python",
-        "year": 2023,
-        "credential_id": "PY-ADV-001"
+        "certification": "Vue - The Complete Guide (incl. Router & Composition API)",
+        "subject": "Udemy",
+        "year": 2022,
+        "credential_id": "UC-cc53d2c7-185d-4882-bae4-9883e4812eef"
       },
       {
-        "certification": "JavaScript & TypeScript",
-        "subject": "Frontend Development",
-        "year": 2023,
-        "credential_id": "JS-TS-002"
-      },
-      {
-        "certification": "Vue.js Ecosystem",
-        "subject": "Vue, Nuxt, Pinia",
-        "year": 2023,
-        "credential_id": "VUE-ECO-003"
+        "certification": "MongoDB - The Complete Developer's Guide",
+        "subject": "Udemy",
+        "year": 2022,
+        "credential_id": "UC-b66fe33f-03ff-4ffa-b0f2-ef0b6ed00520"
       }
     ]
   }
