@@ -24,6 +24,9 @@
       "heading": "Cześć, jestem Kamil Bartczak",
       "subheading": "Full Stack Developer i Inżynier Oprogramowania",
       "paragraph": "Tworzę wyjątkowe doświadczenia cyfrowe poprzez czysty, wydajny kod i innowacyjne rozwiązania. Pasjonuję się budowaniem skalowalnych aplikacji, które mają realny wpływ.",
+      "status": "Dostępny do nowych możliwości",
+      "connect": "Połącz się ze mną",
+      "scroll_indicator": "Przewiń, aby eksplorować",
       "actions": {
         "view_my_work": "Zobacz moje projekty",
         "contact_me": "Skontaktuj się ze mną"

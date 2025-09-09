@@ -6,6 +6,20 @@ html {
   scroll-padding-top: 80px; /* Account for fixed navbar height */
 }
 
+/* Custom animations */
+@keyframes spin-slow {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-spin-slow {
+  animation: spin-slow 20s linear infinite;
+}
+
 @theme {
   --color-black-500: #030213;
   --color-white-500: #fdfdfe;
@@ -16,6 +30,7 @@ html {
   --color-light-gray: #cdccd0;
   --color-white-smoke: #f3f3ef;
   --color-secondary-bg: #f3f3f3;
+  --color-green-500: #10b981;
 
   --font-sans:
     ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol',

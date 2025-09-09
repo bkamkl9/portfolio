@@ -24,6 +24,9 @@
       "heading": "Hi, I'm Kamil Bartczak",
       "subheading": "Full Stack Developer & Software Engineer",
       "paragraph": "I create exceptional digital experiences through clean, efficient code and innovative solutions. Passionate about building scalable applications that make a difference.",
+      "status": "Available for new opportunities",
+      "connect": "Connect with me",
+      "scroll_indicator": "Scroll to explore",
       "actions": {
         "view_my_work": "View My Work",
         "contact_me": "Contact Me"

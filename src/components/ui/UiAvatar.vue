@@ -2,16 +2,22 @@
 import { computed } from 'vue'
 
 const { size = 'md', image = undefined } = defineProps<{
-  size?: 'md' | 'lg'
+  size?: 'md' | 'lg' | 'xl'
   image?: string
 }>()
 
 const sizeClass = computed(() => {
   let base = 'rounded-full bg-black-500 text-white-500 grid place-items-center font-medium'
-  if (size === 'md') {
-    return `${base} w-32 h-32 text-sm`
+  switch (size) {
+    case 'md':
+      return `${base} w-32 h-32 text-sm`
+    case 'lg':
+      return `${base} w-42 h-42 text-lg`
+    case 'xl':
+      return `${base} w-64 h-64 text-2xl`
+    default:
+      return `${base} w-32 h-32 text-sm`
   }
-  return `${base} w-42 h-42`
 })
 </script>
 
