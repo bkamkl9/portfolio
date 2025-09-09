@@ -171,7 +171,8 @@ const toggleMenu = () => {
       <nav
         v-if="isMenuOpen"
         id="mobile-menu"
-        class="fixed top-[73px] right-0 h-[calc(100vh-73px)] w-80 bg-white-500/95 backdrop-blur-md border-l border-smoke-500 z-50 lg:hidden"
+        class="fixed top-[73px] right-0 w-80 bg-white-500/95 backdrop-blur-md border-l border-smoke-500 z-50 lg:hidden"
+        style="height: calc(100vh - 73px); height: calc(100dvh - 73px); padding-bottom: env(safe-area-inset-bottom);"
         role="navigation"
         aria-label="Mobile navigation"
       >
