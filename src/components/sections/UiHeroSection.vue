@@ -22,7 +22,7 @@ const { t } = useI18n()
       <div class="absolute bottom-1/3 left-1/2 w-1.5 h-1.5 bg-slate-gray-500/20 rounded-full"></div>
     </div>
 
-    <UiContainer class="min-h-screen flex items-center justify-center relative">
+    <UiContainer class="min-h-screen flex items-center justify-center relative pt-24 pb-8 md:pt-28 md:pb-12 lg:py-0">
       <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center w-full max-w-6xl">
         <!-- Content Column -->
         <div
@@ -98,13 +98,13 @@ const { t } = useI18n()
 
             <!-- Main avatar -->
             <div class="relative">
-              <UiAvatar size="xl" :image="kamil" class="w-64 h-64 md:w-80 md:h-80">
+              <UiAvatar size="xl" :image="kamil" class="w-48 h-48 sm:w-56 sm:h-56 md:w-72 md:h-72 lg:w-80 lg:h-80">
                 <span class="text-4xl font-bold">KB</span>
               </UiAvatar>
 
               <!-- Status indicator -->
               <div
-                class="absolute bottom-8 right-8 w-8 h-8 bg-green-500 rounded-full border-4 border-white-500 flex items-center justify-center"
+                class="absolute bottom-4 right-4 sm:bottom-6 sm:right-6 md:bottom-8 md:right-8 w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8 bg-green-500 rounded-full border-2 sm:border-3 md:border-4 border-white-500 flex items-center justify-center"
               >
                 <Icon icon="solar:code-linear" class="w-4 h-4 text-white" />
               </div>
