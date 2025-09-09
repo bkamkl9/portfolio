@@ -1,8 +1,12 @@
 export { default as UiAvatar } from "./UiAvatar.vue";
 export { default as UiButton } from "./UiButton.vue";
-export { default as UiPill } from "./UiPill.vue";
 export { default as UiCard } from "./UiCard.vue";
-export { default as UiSectionTitle } from "./UiSectionTitle.vue";
-export { default as UiProgress } from "./UiProgress.vue";
-export { default as UiSwitch } from "./UiSwitch.vue";
+export { default as UiContactInfo } from "./UiContactInfo.vue";
 export { default as UiInput } from "./UiInput.vue";
+export { default as UiPill } from "./UiPill.vue";
+export { default as UiProgress } from "./UiProgress.vue";
+export { default as UiSectionTitle } from "./UiSectionTitle.vue";
+export { default as UiSocialLinks } from "./UiSocialLinks.vue";
+export { default as UiStatusBadge } from "./UiStatusBadge.vue";
+export { default as UiSwitch } from "./UiSwitch.vue";
+export { default as UiTechBadge } from "./UiTechBadge.vue";
