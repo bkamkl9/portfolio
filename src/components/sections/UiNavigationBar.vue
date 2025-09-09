@@ -94,7 +94,7 @@ const toggleMenu = () => {
           </div>
 
           <!-- Desktop Navigation -->
-          <ul class="hidden md:flex gap-6 text-sm text-slate-gray-500" role="menubar">
+          <ul class="hidden lg:flex gap-6 text-sm text-slate-gray-500" role="menubar">
             <li v-for="item in navigationItems" :key="item.key" role="none">
               <a
                 :href="item.href"
@@ -109,7 +109,7 @@ const toggleMenu = () => {
           </ul>
 
           <!-- Desktop Actions -->
-          <div class="hidden md:flex items-center gap-3">
+          <div class="hidden lg:flex items-center gap-3">
             <!-- Language Switcher -->
             <button
               @click="handleLanguageChange(alternativeLanguage.code)"
@@ -126,7 +126,7 @@ const toggleMenu = () => {
           <!-- Mobile Menu Button -->
           <button
             @click="toggleMenu"
-            class="md:hidden p-2 text-slate-gray-500 hover:text-black-500 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 rounded-md"
+            class="lg:hidden p-2 text-slate-gray-500 hover:text-black-500 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 rounded-md"
             :aria-expanded="isMenuOpen"
             :aria-label="isMenuOpen ? 'Close navigation menu' : 'Open navigation menu'"
             aria-controls="mobile-menu"
@@ -149,7 +149,7 @@ const toggleMenu = () => {
     >
       <div
         v-if="isMenuOpen"
-        class="fixed inset-0 bg-black/20 backdrop-blur-sm z-40 md:hidden"
+        class="fixed inset-0 bg-black/20 backdrop-blur-sm z-40 lg:hidden"
         @click="closeMenu"
         aria-hidden="true"
       />
@@ -165,7 +165,7 @@ const toggleMenu = () => {
       <nav
         v-if="isMenuOpen"
         id="mobile-menu"
-        class="fixed top-[73px] right-0 h-[calc(100vh-73px)] w-80 bg-white-500/95 backdrop-blur-md border-l border-smoke-500 z-50 md:hidden"
+        class="fixed top-[73px] right-0 h-[calc(100vh-73px)] w-80 bg-white-500/95 backdrop-blur-md border-l border-smoke-500 z-50 lg:hidden"
         role="navigation"
         aria-label="Mobile navigation"
       >

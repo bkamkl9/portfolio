@@ -1,95 +1,109 @@
 {
-    "nav": {
-        "home": "Strona główna",
-        "about": "O mnie",
-        "skills": "Umiejętności",
-        "projects": "Projekty",
-        "experience": "Doświadczenie",
-        "contact": "Kontakt",
-        "languages": {
-            "pl": "Polski",
-            "en": "English"
-        }
-    },
-    "footer": {
-        "name": "Kamil Bartczak",
-        "paragraph": "Full Stack Developer z pasją do tworzenia wyjątkowych doświadczeń cyfrowych poprzez czysty kod i innowacyjne rozwiązania.",
-        "quick_links": "Szybkie linki",
-        "get_in_touch": "Skontaktuj się",
-        "disclaimer": "Wszelkie prawa zastrzeżone.",
-        "built_with": "Stworzone przy użyciu {0} i {1} ❤️"
-    },
-    "landing": {
-        "hero": {
-            "heading": "Cześć, jestem Kamil Bartczak",
-            "subheading": "Full Stack Developer i Inżynier Oprogramowania",
-            "paragraph": "Tworzę wyjątkowe doświadczenia cyfrowe poprzez czysty, wydajny kod i innowacyjne rozwiązania. Pasjonuję się budowaniem skalowalnych aplikacji, które mają realny wpływ.",
-            "actions": {
-                "view_my_work": "Zobacz moje projekty",
-                "contact_me": "Skontaktuj się ze mną"
-            }
-        },
-        "about": {
-            "heading": "O mnie",
-            "paragraph": "Dowiedz się więcej o mojej drodze, pasjach i tym, co mnie napędza jako developera",
-            "my_story": "Moja historia",
-            "my_story_paragraph_0": "Z ponad 5-letnim doświadczeniem w tworzeniu oprogramowania, miałem okazję pracować nad różnorodnymi projektami — od startupów po rozwiązania dla dużych firm. Moja droga rozpoczęła się od ciekawości, jak działają rzeczy, która przerodziła się w pasję do tworzenia cyfrowych doświadczeń rozwiązujących realne problemy.",
-            "my_story_paragraph_1": "Wierzę w pisanie czystego, łatwego w utrzymaniu kodu i śledzenie nowych technologii. Gdy nie koduję, udzielam się w projektach open source, mentoruję początkujących developerów albo zgłębiam najnowsze osiągnięcia w dziedzinie AI i uczenia maszynowego.",
-            "my_passions": "Co mnie pasjonuje",
-            "stats": {
-                "projects_completed": "Zrealizowane projekty",
-                "years_of_experience": "Lata doświadczenia"
-            }
-        },
-        "skills": {
-            "heading": "Umiejętności i Specjalizacje",
-            "paragraph": "Subiektywny przegląd moich umiejętności technicznych i narzędzi, których używam do tworzenia wyjątkowego oprogramowania",
-            "technologies": "Technologie",
-            "skills": {
-                "frontend": "Frontend",
-                "backend": "Backend",
-                "database_and_cloud": "Bazy danych i chmura",
-                "tools_and_processes": "Narzędzia i procesy"
-            }
-        },
-        "projects": {
-            "heading": "Projekty",
-            "paragraph": "Wybór projektów, nad którymi pracowałem, prezentujący różne technologie i podejścia do rozwiązywania problemów",
-            "view_project": "Zobacz projekt",
-            "view_code": "Zobacz kod",
-            "featured": "Wyróżnione",
-            "other_projects": "Inne projekty"
-        },
-        "experience": {
-            "heading": "Doświadczenie i Edukacja",
-            "paragraph": "Moja ścieżka zawodowa, wykształcenie i osiągnięcia w zakresie ciągłego rozwoju",
-            "sections": {
-                "experience": "Doświadczenie",
-                "education": "Edukacja",
-                "skills": "Umiejętności"
-            },
-            "timeline_present": "Obecnie",
-            "certification_issued": "Wydano",
-            "key_achievements": "Kluczowe osiągnięcia"
-        },
-        "contact": {
-            "heading": "Skontaktuj się",
-            "paragraph": "Masz pomysł na projekt lub chcesz porozmawiać o współpracy? Z przyjemnością Cię wysłucham!",
-            "lets_connect": "Pozostańmy w kontakcie",
-            "lests_connect_paragraph": "Zawsze jestem otwarty na rozmowę o nowych projektach, kreatywnych pomysłach lub możliwościach wspólnej pracy. Napisz do mnie przez jeden z poniższych kanałów.",
-            "follow_me": "Śledź mnie",
-            "email": "Email",
-            "phone": "Telefon",
-            "location": "Lokalizacja",
-            "form": {
-                "title": "Wyślij wiadomość",
-                "paragraph": "Wypełnij formularz poniżej, a odezwę się tak szybko, jak to możliwe.",
-                "name": "Imię",
-                "email": "Email",
-                "subject": "Temat",
-                "message": "Wiadomość",
-                "send": "Wyślij wiadomość"
-            }
-        }
+  "nav": {
+    "home": "Strona główna",
+    "about": "O mnie",
+    "skills": "Umiejętności",
+    "projects": "Projekty",
+    "experience": "Doświadczenie",
+    "contact": "Kontakt",
+    "languages": {
+      "pl": "Polski",
+      "en": "English"
     }
+  },
+  "footer": {
+    "name": "Kamil Bartczak",
+    "paragraph": "Full Stack Developer z pasją do tworzenia wyjątkowych doświadczeń cyfrowych poprzez czysty kod i innowacyjne rozwiązania.",
+    "quick_links": "Szybkie linki",
+    "get_in_touch": "Skontaktuj się",
+    "disclaimer": "Wszelkie prawa zastrzeżone.",
+    "built_with": "Stworzone przy użyciu {0} i {1} ❤️"
+  },
+  "landing": {
+    "hero": {
+      "heading": "Cześć, jestem Kamil Bartczak",
+      "subheading": "Full Stack Developer i Inżynier Oprogramowania",
+      "paragraph": "Tworzę wyjątkowe doświadczenia cyfrowe poprzez czysty, wydajny kod i innowacyjne rozwiązania. Pasjonuję się budowaniem skalowalnych aplikacji, które mają realny wpływ.",
+      "actions": {
+        "view_my_work": "Zobacz moje projekty",
+        "contact_me": "Skontaktuj się ze mną"
+      }
+    },
+    "about": {
+      "heading": "O mnie",
+      "paragraph": "Dowiedz się więcej o mojej drodze, pasjach i tym, co mnie napędza jako developera",
+      "my_story": "Moja historia",
+      "my_story_paragraph_0": "Z ponad 5-letnim doświadczeniem w tworzeniu oprogramowania, miałem okazję pracować nad różnorodnymi projektami — od startupów po rozwiązania dla dużych firm. Moja droga rozpoczęła się od ciekawości, jak działają rzeczy, która przerodziła się w pasję do tworzenia cyfrowych doświadczeń rozwiązujących realne problemy.",
+      "my_story_paragraph_1": "Wierzę w pisanie czystego, łatwego w utrzymaniu kodu i śledzenie nowych technologii. Gdy nie koduję, udzielam się w projektach open source, mentoruję początkujących developerów albo zgłębiam najnowsze osiągnięcia w dziedzinie AI i uczenia maszynowego.",
+      "my_passions": "Co mnie pasjonuje",
+      "stats": {
+        "projects_completed": "Zrealizowane projekty",
+        "years_of_experience": "Lata doświadczenia"
+      }
+    },
+    "skills": {
+      "heading": "Umiejętności i Specjalizacje",
+      "paragraph": "Subiektywny przegląd moich umiejętności technicznych i narzędzi, których używam do tworzenia wyjątkowego oprogramowania",
+      "technologies": "Technologie",
+      "skills": {
+        "frontend": "Frontend",
+        "backend": "Backend",
+        "database_and_cloud": "Bazy danych i chmura",
+        "tools_and_processes": "Narzędzia i procesy"
+      }
+    },
+    "projects": {
+      "heading": "Projekty",
+      "paragraph": "Wybór projektów, nad którymi pracowałem, prezentujący różne technologie i podejścia do rozwiązywania problemów",
+      "view_project": "Zobacz projekt",
+      "view_code": "Zobacz kod",
+      "featured": "Wyróżnione",
+      "other_projects": "Inne projekty"
+    },
+    "experience": {
+      "heading": "Doświadczenie i Edukacja",
+      "paragraph": "Moja ścieżka zawodowa, wykształcenie i osiągnięcia w zakresie ciągłego rozwoju",
+      "sections": {
+        "experience": "Doświadczenie",
+        "education": "Edukacja",
+        "skills": "Umiejętności"
+      },
+      "timeline_present": "Obecnie",
+      "certification_issued": "Wydano",
+      "key_achievements": "Kluczowe osiągnięcia",
+      "continuous_learning": {
+        "title": "Ciągła ścieżka rozwoju",
+        "description": "Wierzę w nadążanie za trendami branżowymi i ciągłe rozwijanie umiejętności poprzez profesjonalne certyfikaty i praktyczne uczenie się. Te certyfikaty reprezentują moje zaangażowanie w doskonałość i ekspertyzę w różnych technologiach."
+      }
+    },
+    "contact": {
+      "heading": "Skontaktuj się",
+      "paragraph": "Masz pomysł na projekt lub chcesz porozmawiać o współpracy? Z przyjemnością Cię wysłucham!",
+      "lets_connect": "Pozostańmy w kontakcie",
+      "lests_connect_paragraph": "Zawsze jestem otwarty na rozmowę o nowych projektach, kreatywnych pomysłach lub możliwościach wspólnej pracy. Napisz do mnie przez jeden z poniższych kanałów.",
+      "follow_me": "Śledź mnie",
+      "email": "Email",
+      "phone": "Telefon",
+      "location": "Lokalizacja",
+      "form": {
+        "title": "Wyślij wiadomość",
+        "paragraph": "Wypełnij formularz poniżej, a odezwę się tak szybko, jak to możliwe.",
+        "name": "Imię",
+        "email": "Email",
+        "subject": "Temat",
+        "message": "Wiadomość",
+        "send": "Wyślij wiadomość",
+        "validation": {
+          "name_required": "Imię jest wymagane",
+          "email_required": "Email jest wymagany",
+          "email_invalid": "Proszę podać prawidłowy adres email",
+          "subject_required": "Temat jest wymagany",
+          "message_required": "Wiadomość jest wymagana",
+          "submission_error": "Coś poszło nie tak. Spróbuj ponownie lub skontaktuj się ze mną bezpośrednio.",
+          "success_message": "Dziękuję! Twoja wiadomość zostanie otwarta w kliencie email.",
+          "preparing": "Przygotowuję..."
+        }
+      }
+    }
+  }
 }

@@ -1,10 +1,17 @@
 <script setup lang="ts">
 import { computed } from 'vue'
 
-const { size = 'md', variant = 'primary' } = defineProps<{
+const {
+  size = 'md',
+  variant = 'primary',
+  href,
+  target,
+} = defineProps<{
   size?: 'md' | 'lg' | 'sm'
   variant?: 'primary' | 'secondary' | 'icon'
   title?: string
+  href?: string
+  target?: string
 }>()
 
 const sizeClass = computed(() => {
@@ -41,11 +48,15 @@ const variantClass = computed(() => {
 </script>
 
 <template>
-  <button
-    class="inline-flex items-center justify-center gap-2 whitespace-nowrap font-medium rounded-md cursor-pointer"
+  <component
+    :is="href ? 'a' : 'button'"
+    :href="href"
+    :target="target"
+    :rel="target === '_blank' ? 'noopener noreferrer' : undefined"
+    class="inline-flex items-center justify-center gap-2 whitespace-nowrap font-medium rounded-md cursor-pointer transition-colors duration-200"
     :class="[sizeClass, variantClass]"
     :title="title"
   >
     <slot />
-  </button>
+  </component>
 </template>

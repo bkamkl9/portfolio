@@ -112,12 +112,10 @@ const selected = ref<string>(switchOptions.value[1].value)
       >
         <span class="text-black-500 text-sm font-medium flex items-center justify-center gap-2">
           <Icon icon="mingcute:certificate-fill" class="text-lg" />
-          Continuous Learning Journey
+          {{ t('landing.experience.continuous_learning.title') }}
         </span>
         <p class="text-slate-gray-500 text-xs mt-4 max-w-lg mx-auto leading-relaxed">
-          I believe in staying current with industry trends and continuously expanding my skill set
-          through professional certifications and hands-on learning. These certifications represent
-          my commitment to excellence and expertise in various technologies.
+          {{ t('landing.experience.continuous_learning.description') }}
         </p>
       </div>
     </UiContainer>

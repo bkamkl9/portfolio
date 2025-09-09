@@ -24,21 +24,31 @@ const { t } = useI18n()
           {{ t('landing.hero.paragraph') }}
         </p>
         <div class="flex flex-wrap gap-x-6 gap-y-4 justify-center mb-6">
-          <UiButton class="min-w-[160px]" size="lg">
+          <UiButton class="min-w-[160px]" size="lg" href="#projects">
             <span>{{ t('landing.hero.actions.view_my_work') }}</span>
           </UiButton>
-          <UiButton class="min-w-[160px]" size="lg" variant="secondary">
+          <UiButton class="min-w-[160px]" size="lg" variant="secondary" href="#contact">
             <span>{{ t('landing.hero.actions.contact_me') }}</span>
           </UiButton>
         </div>
         <div class="flex flex-wrap gap-2 justify-center">
-          <UiButton variant="icon" title="Github">
+          <UiButton variant="icon" title="Github" href="https://github.com/bkamkl9" target="_blank">
             <FontAwesomeIcon :icon="faGithub" />
           </UiButton>
-          <UiButton variant="icon" title="Linkedin">
+          <UiButton
+            variant="icon"
+            title="Linkedin"
+            href="https://www.linkedin.com/in/kamil-bartczak-dev/"
+            target="_blank"
+          >
             <FontAwesomeIcon :icon="faLinkedin" />
           </UiButton>
-          <UiButton variant="icon" title="Medium">
+          <UiButton
+            variant="icon"
+            title="Medium"
+            href="https://medium.com/@kamilbartczak2023"
+            target="_blank"
+          >
             <FontAwesomeIcon :icon="faMedium" />
           </UiButton>
         </div>
