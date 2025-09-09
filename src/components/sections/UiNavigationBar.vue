@@ -35,8 +35,8 @@ const navigationItems: NavigationItem[] = [
 ]
 
 const languages: Language[] = [
-  { code: 'en', label: 'nav.languages.en', icon: 'flag-icons:us' },
-  { code: 'pl', label: 'nav.languages.pl', icon: 'flag-icons:pl' },
+  { code: 'en', label: 'nav.languages.en', icon: 'twemoji:flag-united-states' },
+  { code: 'pl', label: 'nav.languages.pl', icon: 'twemoji:flag-poland' },
 ]
 
 // Computed
@@ -117,7 +117,13 @@ const toggleMenu = () => {
               :aria-label="`Switch to ${t(alternativeLanguage.label)}`"
               :title="`Switch to ${t(alternativeLanguage.label)}`"
             >
-              <Icon :icon="currentLanguage.icon" class="w-4 h-4" />
+              <Icon :icon="currentLanguage.icon" class="w-4 h-4" v-if="currentLanguage.icon" />
+              <span
+                class="w-6 h-4 flex items-center justify-center text-xs font-bold bg-smoke-500 rounded"
+                v-else
+              >
+                {{ currentLanguage.code.toUpperCase() }}
+              </span>
               <span>{{ t(currentLanguage.label) }}</span>
               <Icon icon="solar:alt-arrow-down-linear" class="w-3 h-3" />
             </button>
@@ -195,7 +201,13 @@ const toggleMenu = () => {
               :aria-label="`Switch to ${t(alternativeLanguage.label)}`"
             >
               <div class="flex items-center gap-3">
-                <Icon :icon="currentLanguage.icon" class="w-5 h-5" />
+                <Icon :icon="currentLanguage.icon" class="w-5 h-5" v-if="currentLanguage.icon" />
+                <span
+                  class="w-6 h-5 flex items-center justify-center text-xs font-bold bg-smoke-500 rounded"
+                  v-else
+                >
+                  {{ currentLanguage.code.toUpperCase() }}
+                </span>
                 <span>{{ t(currentLanguage.label) }}</span>
               </div>
               <Icon icon="solar:alt-arrow-right-linear" class="w-4 h-4" />
