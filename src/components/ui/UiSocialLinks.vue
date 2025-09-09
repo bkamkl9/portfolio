@@ -36,10 +36,10 @@ const baseClasses =
   'inline-flex items-center justify-center rounded-lg transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2'
 
 const variantClasses = {
-  default: 'bg-smoke-500 hover:bg-black-500 text-slate-gray-500 hover:text-white-500',
+  default: 'bg-smoke-500 hover:bg-black-500 text-slate-gray-700 hover:text-white-500',
   pills:
-    'bg-white-500/80 backdrop-blur-sm border border-smoke-500 hover:border-black-500 text-slate-gray-500 hover:text-black-500',
-  minimal: 'text-slate-gray-500 hover:text-black-500 hover:bg-smoke-500',
+    'bg-white-500/80 backdrop-blur-sm border border-smoke-500 hover:border-black-500 text-slate-gray-700 hover:text-black-500',
+  minimal: 'text-slate-gray-700 hover:text-black-500 hover:bg-smoke-500',
 }
 </script>
 

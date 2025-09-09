@@ -42,7 +42,7 @@ const variantClass = computed(() => {
     case 'secondary':
       return 'bg-white-500 text-black-500 border border-grain-500 hover:bg-smoke-500'
     case 'icon':
-      return 'text-xl text-slate-gray-500 hover:bg-smoke-500 aspect-square p-2'
+      return 'text-xl text-slate-gray-700 hover:bg-smoke-500 aspect-square p-2'
   }
 })
 </script>

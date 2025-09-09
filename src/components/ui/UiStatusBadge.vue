@@ -26,9 +26,9 @@ const containerClasses = {
 }
 
 const textClasses = {
-  pill: 'text-xs text-slate-gray-500 font-medium',
-  compact: 'text-xs text-slate-gray-500 font-medium',
-  minimal: 'text-sm text-slate-gray-500',
+  pill: 'text-xs text-slate-gray-700 font-medium',
+  compact: 'text-xs text-slate-gray-700 font-medium',
+  minimal: 'text-sm text-slate-gray-700',
 }
 </script>
 

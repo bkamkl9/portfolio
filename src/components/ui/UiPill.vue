@@ -7,9 +7,9 @@ const { variant = 'default' } = defineProps<{
 
 const classes = computed(() => {
   return {
-    'text-[0.65rem] text-black-500 bg-smoke-500 rounded-md px-1.5 py-0.5 font-medium':
+    'text-[0.65rem] text-black-500 bg-smoke-500 rounded-md px-1.5 py-0.5 font-medium whitespace-nowrap':
       variant === 'default',
-    'text-[0.65rem] text-black-500 bg-white-500 rounded-md px-1.5 py-0.5 font-medium border border-smoke-500':
+    'text-[0.65rem] text-black-500 bg-white-500 rounded-md px-1.5 py-0.5 font-medium border border-smoke-500 whitespace-nowrap':
       variant === 'outline',
   }
 })

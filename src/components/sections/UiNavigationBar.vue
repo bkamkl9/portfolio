@@ -94,7 +94,7 @@ const toggleMenu = () => {
           </div>
 
           <!-- Desktop Navigation -->
-          <ul class="hidden lg:flex gap-6 text-sm text-slate-gray-500" role="menubar">
+          <ul class="hidden lg:flex gap-6 text-sm text-slate-gray-700" role="menubar">
             <li v-for="item in navigationItems" :key="item.key" role="none">
               <a
                 :href="item.href"
@@ -126,7 +126,7 @@ const toggleMenu = () => {
           <!-- Mobile Menu Button -->
           <button
             @click="toggleMenu"
-            class="lg:hidden p-2 text-slate-gray-500 hover:text-black-500 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 rounded-md"
+            class="lg:hidden p-2 text-slate-gray-700 hover:text-black-500 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 rounded-md"
             :aria-expanded="isMenuOpen"
             :aria-label="isMenuOpen ? 'Close navigation menu' : 'Open navigation menu'"
             aria-controls="mobile-menu"
@@ -177,7 +177,7 @@ const toggleMenu = () => {
                 <a
                   :href="item.href"
                   @click.prevent="scrollToSection(item.href)"
-                  class="block text-slate-gray-500 hover:text-black-500 transition-colors duration-200 py-3 px-4 rounded-lg hover:bg-smoke-500 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                  class="block text-slate-gray-700 hover:text-black-500 transition-colors duration-200 py-3 px-4 rounded-lg hover:bg-smoke-500 focus:outline-none focus:ring-2 focus:ring-blue-500"
                   role="menuitem"
                   :aria-label="`Navigate to ${t(item.translationKey)} section`"
                 >
@@ -191,7 +191,7 @@ const toggleMenu = () => {
           <div class="border-t border-smoke-500 p-6">
             <button
               @click="handleLanguageChange(alternativeLanguage.code)"
-              class="w-full flex items-center justify-between px-4 py-3 text-sm text-slate-gray-500 hover:text-black-500 rounded-lg hover:bg-smoke-500 transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-blue-500"
+              class="w-full flex items-center justify-between px-4 py-3 text-sm text-slate-gray-700 hover:text-black-500 rounded-lg hover:bg-smoke-500 transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-blue-500"
               :aria-label="`Switch to ${t(alternativeLanguage.label)}`"
             >
               <div class="flex items-center gap-3">

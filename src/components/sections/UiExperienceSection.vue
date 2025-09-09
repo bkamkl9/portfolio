@@ -10,9 +10,21 @@ const { t } = useI18n()
 const content = await useContent('experience')
 
 const switchOptions = computed(() => [
-  { label: t('landing.experience.sections.experience'), value: 'experience', icon: 'solar:briefcase-linear' },
-  { label: t('landing.experience.sections.education'), value: 'education', icon: 'solar:graduation-cap-linear' },
-  { label: t('landing.experience.sections.skills'), value: 'skills', icon: 'solar:diploma-linear' },
+  {
+    label: t('landing.experience.sections.experience'),
+    value: 'experience',
+    icon: 'mdi:briefcase',
+  },
+  {
+    label: t('landing.experience.sections.education'),
+    value: 'education',
+    icon: 'mdi:school',
+  },
+  {
+    label: t('landing.experience.sections.skills'),
+    value: 'skills',
+    icon: 'mdi:certificate',
+  },
 ])
 const selected = ref<string>(switchOptions.value[1].value)
 </script>
@@ -26,7 +38,7 @@ const selected = ref<string>(switchOptions.value[1].value)
       />
       <Ui.UiSwitch v-model:selected="selected" :options="switchOptions" class="mb-12" />
       <div v-if="selected === 'experience'" class="space-y-4">
-        <Ui.UiExperienceCard 
+        <Ui.UiExperienceCard
           v-for="experience in content.experience"
           :key="experience.title"
           :item="experience"
@@ -34,7 +46,7 @@ const selected = ref<string>(switchOptions.value[1].value)
         />
       </div>
       <div v-if="selected === 'education'" class="space-y-4">
-        <Ui.UiExperienceCard 
+        <Ui.UiExperienceCard
           v-for="education in content.education"
           :key="education.title"
           :item="education"
@@ -65,7 +77,7 @@ const selected = ref<string>(switchOptions.value[1].value)
           <Icon icon="mingcute:certificate-fill" class="text-lg" />
           {{ t('landing.experience.continuous_learning.title') }}
         </span>
-        <p class="text-slate-gray-500 text-xs mt-4 max-w-lg mx-auto leading-relaxed">
+        <p class="text-slate-gray-700 text-xs mt-4 max-w-lg mx-auto leading-relaxed">
           {{ t('landing.experience.continuous_learning.description') }}
         </p>
       </div>

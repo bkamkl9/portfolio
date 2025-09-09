@@ -34,10 +34,11 @@ const itemClasses = {
 }
 
 const iconContainerClasses = {
-  default: 'w-10 h-10 bg-smoke-500 rounded-md flex items-center justify-center flex-shrink-0',
+  default:
+    'w-10 h-10 bg-smoke-500 rounded-md flex items-center justify-center flex-shrink-0 text-slate-gray-700',
   compact:
-    'w-8 h-8 bg-smoke-500 group-hover:bg-black-500 text-slate-gray-500 group-hover:text-white-500 rounded-md flex items-center justify-center transition-colors duration-200 flex-shrink-0',
-  card: 'w-12 h-12 bg-smoke-500 group-hover:bg-black-500 text-slate-gray-500 group-hover:text-white-500 rounded-lg flex items-center justify-center transition-colors duration-200 flex-shrink-0',
+    'w-8 h-8 bg-smoke-500 group-hover:bg-black-500 text-slate-gray-700 group-hover:text-white-500 rounded-md flex items-center justify-center transition-colors duration-200 flex-shrink-0',
+  card: 'w-12 h-12 bg-smoke-500 group-hover:bg-black-500 text-slate-gray-700 group-hover:text-white-500 rounded-lg flex items-center justify-center transition-colors duration-200 flex-shrink-0',
 }
 
 const iconSizes = {

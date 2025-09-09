@@ -53,12 +53,15 @@ const showFeaturedBadge = variant === 'featured' && project.is_featured
           class="w-full h-full object-cover"
           @error="handleImageError"
         />
-        <div v-else class="flex items-center justify-center text-slate-gray-500 text-sm">
+        <div
+          v-else
+          class="flex items-center justify-center text-slate-gray-700 text-sm font-medium"
+        >
           {{ project.title }}
         </div>
       </div>
     </template>
-    
+
     <template #body>
       <div class="flex items-center justify-between">
         <h3 class="text-black-500 text-sm">{{ project.title }}</h3>
@@ -66,17 +69,17 @@ const showFeaturedBadge = variant === 'featured' && project.is_featured
           {{ t('landing.projects.featured') }}
         </Ui.UiPill>
       </div>
-      
+
       <p :class="['text-slate-gray-500 mt-2', descriptionClass]">
         {{ project.description }}
       </p>
-      
-      <div class="flex items-center gap-2 mt-4">
+
+      <div class="flex flex-wrap items-center gap-2 mt-4">
         <Ui.UiPill variant="outline" v-for="tag in project.tags" :key="tag">
           {{ tag }}
         </Ui.UiPill>
       </div>
-      
+
       <div class="flex items-center gap-2 mt-3">
         <Ui.UiButton
           size="md"
@@ -88,7 +91,7 @@ const showFeaturedBadge = variant === 'featured' && project.is_featured
         >
           {{ t('landing.projects.view_project') }}
         </Ui.UiButton>
-        
+
         <Ui.UiButton
           size="md"
           variant="secondary"

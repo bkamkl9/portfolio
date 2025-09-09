@@ -126,7 +126,7 @@ const currentYear = new Date().getFullYear()
                 :title="social.name"
                 target="_blank"
                 rel="noopener noreferrer"
-                class="w-9 h-9 bg-smoke-500 hover:bg-black-500 text-slate-gray-500 hover:text-white-500 rounded-lg flex items-center justify-center transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
+                class="w-9 h-9 bg-smoke-500 hover:bg-black-500 text-slate-gray-700 hover:text-white-500 rounded-lg flex items-center justify-center transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
               >
                 <Icon :icon="social.icon" class="w-4 h-4" />
               </a>
@@ -170,7 +170,7 @@ const currentYear = new Date().getFullYear()
                 :aria-label="`Contact via ${contact.label}: ${contact.value}`"
               >
                 <div
-                  class="w-8 h-8 bg-smoke-500 group-hover:bg-black-500 text-slate-gray-500 group-hover:text-white-500 rounded-md flex items-center justify-center transition-colors duration-200 flex-shrink-0"
+                  class="w-8 h-8 bg-smoke-500 group-hover:bg-black-500 text-slate-gray-700 group-hover:text-white-500 rounded-md flex items-center justify-center transition-colors duration-200 flex-shrink-0"
                 >
                   <Icon :icon="contact.icon" class="w-4 h-4" />
                 </div>

@@ -13,56 +13,47 @@
       }
     },
     {
-      "title": "E-Commerce Platform",
+      "title": "BlazeYourPrint",
       "is_featured": true,
-      "description": "A full-stack e-commerce solution with React, Node.js, and PostgreSQL. Features include user authentication, payment processing, inventory management, and admin dashboard.",
-      "tags": ["React", "Node.js", "PostgreSQL"],
-      "image": "https://placehold.co/600x400/e2e8f0/64748b?text=E-Commerce+Platform",
-      "image_alt": "E-Commerce Platform screenshot",
-      "links": {
-        "view_project": "https://example.com",
-        "view_code": "https://github.com/example/project"
-      }
+      "description": "Kompleksowa platforma e-commerce dla firmy drukarskiej. Stworzyłem niestandardowy kreator produktów, panel zarządzania klientami i produktami, system rabatów, optymalizację procesu checkout oraz angażującą stronę główną. Projekt obejmował pełny cykl rozwoju od koncepcji do wdrożenia.",
+      "tags": [
+        "E-commerce",
+        "Product Builder",
+        "Dashboard",
+        "Payment System",
+        "Frontend",
+        "Backend"
+      ],
+      "image": "https://placehold.co/600x400/6366f1/ffffff?text=BlazeYourPrint",
+      "image_alt": "BlazeYourPrint - platforma e-commerce dla drukarni",
+      "links": {}
     },
     {
-      "title": "E-Commerce Platform",
+      "title": "Task Management App",
       "is_featured": false,
-      "description": "A full-stack e-commerce solution with React, Node.js, and PostgreSQL. Features include user authentication, payment processing, inventory management, and admin dashboard.",
-      "tags": ["React", "Node.js", "PostgreSQL"],
-      "links": {
-        "view_project": "https://example.com",
-        "view_code": "https://github.com/example/project"
-      }
+      "description": "Aplikacja do zarządzania zadaniami z funkcjami czasu rzeczywistego, drag & drop oraz współpracy zespołowej. Zbudowana przy użyciu Vue.js, Node.js i MongoDB.",
+      "tags": ["Vue.js", "Node.js", "MongoDB", "Real-time"],
+      "image": "https://placehold.co/600x400/10b981/ffffff?text=Task+Manager",
+      "image_alt": "Aplikacja do zarządzania zadaniami",
+      "links": {}
     },
     {
-      "title": "E-Commerce Platform",
+      "title": "Weather Dashboard",
       "is_featured": false,
-      "description": "A full-stack e-commerce solution with React, Node.js, and PostgreSQL. Features include user authentication, payment processing, inventory management, and admin dashboard.",
-      "tags": ["React", "Node.js", "PostgreSQL"],
-      "links": {
-        "view_project": "https://example.com",
-        "view_code": "https://github.com/example/project"
-      }
+      "description": "Responsywny dashboard pogodowy z prognozami, mapami interaktywnymi i personalizowanymi alertami. Wykorzystuje zewnętrzne API pogodowe.",
+      "tags": ["JavaScript", "API Integration", "Charts", "Responsive"],
+      "image": "https://placehold.co/600x400/3b82f6/ffffff?text=Weather+Dashboard",
+      "image_alt": "Dashboard pogodowy",
+      "links": {}
     },
     {
-      "title": "E-Commerce Platform",
+      "title": "Personal Blog",
       "is_featured": false,
-      "description": "A full-stack e-commerce solution with React, Node.js, and PostgreSQL. Features include user authentication, payment processing, inventory management, and admin dashboard.",
-      "tags": ["React", "Node.js", "PostgreSQL"],
-      "links": {
-        "view_project": "https://example.com",
-        "view_code": "https://github.com/example/project"
-      }
-    },
-    {
-      "title": "E-Commerce Platform",
-      "is_featured": false,
-      "description": "A full-stack e-commerce solution with React, Node.js, and PostgreSQL. Features include user authentication, payment processing, inventory management, and admin dashboard.",
-      "tags": ["React", "Node.js", "PostgreSQL"],
-      "links": {
-        "view_project": "https://example.com",
-        "view_code": "https://github.com/example/project"
-      }
+      "description": "Blog osobisty z systemem CMS, komentarzami i optymalizacją SEO. Zbudowany z Nuxt.js dla lepszej wydajności i indeksowania.",
+      "tags": ["Nuxt.js", "CMS", "SEO", "Blog"],
+      "image": "https://placehold.co/600x400/8b5cf6/ffffff?text=Personal+Blog",
+      "image_alt": "Blog osobisty",
+      "links": {}
     }
   ],
   "en": [
@@ -79,56 +70,47 @@
       }
     },
     {
-      "title": "E-Commerce Platform",
+      "title": "BlazeYourPrint",
       "is_featured": true,
-      "description": "A full-stack e-commerce solution with React, Node.js, and PostgreSQL. Features include user authentication, payment processing, inventory management, and admin dashboard.",
-      "tags": ["React", "Node.js", "PostgreSQL"],
-      "image": "https://placehold.co/600x400/e2e8f0/64748b?text=E-Commerce+Platform",
-      "image_alt": "E-Commerce Platform screenshot",
-      "links": {
-        "view_project": "https://example.com",
-        "view_code": "https://github.com/example/project"
-      }
+      "description": "Comprehensive e-commerce platform for a printing company. I developed a custom product builder, dashboard for efficient customer and product management, discount system, optimized checkout process, and engaging landing page. The project encompassed the full development cycle from concept to deployment.",
+      "tags": [
+        "E-commerce",
+        "Product Builder",
+        "Dashboard",
+        "Payment System",
+        "Frontend",
+        "Backend"
+      ],
+      "image": "https://placehold.co/600x400/6366f1/ffffff?text=BlazeYourPrint",
+      "image_alt": "BlazeYourPrint - e-commerce platform for printing services",
+      "links": {}
     },
     {
-      "title": "E-Commerce Platform",
+      "title": "Task Management App",
       "is_featured": false,
-      "description": "A full-stack e-commerce solution with React, Node.js, and PostgreSQL. Features include user authentication, payment processing, inventory management, and admin dashboard.",
-      "tags": ["React", "Node.js", "PostgreSQL"],
-      "links": {
-        "view_project": "https://example.com",
-        "view_code": "https://github.com/example/project"
-      }
+      "description": "A collaborative task management application with real-time updates, drag & drop functionality, and team collaboration features. Built with Vue.js, Node.js, and MongoDB.",
+      "tags": ["Vue.js", "Node.js", "MongoDB", "Real-time"],
+      "image": "https://placehold.co/600x400/10b981/ffffff?text=Task+Manager",
+      "image_alt": "Task Management Application",
+      "links": {}
     },
     {
-      "title": "E-Commerce Platform",
+      "title": "Weather Dashboard",
       "is_featured": false,
-      "description": "A full-stack e-commerce solution with React, Node.js, and PostgreSQL. Features include user authentication, payment processing, inventory management, and admin dashboard.",
-      "tags": ["React", "Node.js", "PostgreSQL"],
-      "links": {
-        "view_project": "https://example.com",
-        "view_code": "https://github.com/example/project"
-      }
+      "description": "Responsive weather dashboard with forecasts, interactive maps, and personalized alerts. Integrates with external weather APIs for real-time data.",
+      "tags": ["JavaScript", "API Integration", "Charts", "Responsive"],
+      "image": "https://placehold.co/600x400/3b82f6/ffffff?text=Weather+Dashboard",
+      "image_alt": "Weather Dashboard Application",
+      "links": {}
     },
     {
-      "title": "E-Commerce Platform",
+      "title": "Personal Blog",
       "is_featured": false,
-      "description": "A full-stack e-commerce solution with React, Node.js, and PostgreSQL. Features include user authentication, payment processing, inventory management, and admin dashboard.",
-      "tags": ["React", "Node.js", "PostgreSQL"],
-      "links": {
-        "view_project": "https://example.com",
-        "view_code": "https://github.com/example/project"
-      }
-    },
-    {
-      "title": "E-Commerce Platform",
-      "is_featured": false,
-      "description": "A full-stack e-commerce solution with React, Node.js, and PostgreSQL. Features include user authentication, payment processing, inventory management, and admin dashboard.",
-      "tags": ["React", "Node.js", "PostgreSQL"],
-      "links": {
-        "view_project": "https://example.com",
-        "view_code": "https://github.com/example/project"
-      }
+      "description": "A personal blog with CMS capabilities, comment system, and SEO optimization. Built with Nuxt.js for enhanced performance and search engine indexing.",
+      "tags": ["Nuxt.js", "CMS", "SEO", "Blog"],
+      "image": "https://placehold.co/600x400/8b5cf6/ffffff?text=Personal+Blog",
+      "image_alt": "Personal Blog Platform",
+      "links": {}
     }
   ]
 }

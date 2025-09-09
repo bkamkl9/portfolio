@@ -30,7 +30,7 @@ const iconSizes = {
 const variantClasses = {
   pill: 'bg-white-500/80 backdrop-blur-sm border border-smoke-500 hover:border-black-500 transition-colors duration-200',
   compact:
-    'bg-smoke-500 hover:bg-black-500 text-slate-gray-500 hover:text-white-500 transition-colors duration-200',
+    'bg-smoke-500 hover:bg-black-500 text-slate-gray-700 hover:text-white-500 transition-colors duration-200',
   outlined:
     'border border-slate-gray-500/30 hover:border-slate-gray-500 hover:bg-smoke-500 transition-colors duration-200',
 }
@@ -48,7 +48,7 @@ const variantClasses = {
       ]"
     >
       <Icon :icon="tech.icon" :class="iconSizes[size]" />
-      <span class="text-slate-gray-500">{{ tech.name }}</span>
+      <span class="text-slate-gray-700">{{ tech.name }}</span>
     </div>
   </div>
 </template>

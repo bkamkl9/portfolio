@@ -117,19 +117,19 @@ const { t } = useI18n()
               class="flex items-center gap-2 bg-white-500/80 backdrop-blur-sm px-3 py-2 rounded-full border border-smoke-500"
             >
               <Icon icon="logos:vue" class="w-4 h-4" />
-              <span class="text-xs font-medium text-slate-gray-500">Vue.js</span>
+              <span class="text-xs font-medium text-slate-gray-700">Vue.js</span>
             </div>
             <div
               class="flex items-center gap-2 bg-white-500/80 backdrop-blur-sm px-3 py-2 rounded-full border border-smoke-500"
             >
               <Icon icon="logos:python" class="w-4 h-4" />
-              <span class="text-xs font-medium text-slate-gray-500">Python</span>
+              <span class="text-xs font-medium text-slate-gray-700">Python</span>
             </div>
             <div
               class="flex items-center gap-2 bg-white-500/80 backdrop-blur-sm px-3 py-2 rounded-full border border-smoke-500"
             >
               <Icon icon="logos:nodejs-icon" class="w-4 h-4" />
-              <span class="text-xs font-medium text-slate-gray-500">Node.js</span>
+              <span class="text-xs font-medium text-slate-gray-700">Node.js</span>
             </div>
           </div>
         </div>
