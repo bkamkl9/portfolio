@@ -86,7 +86,7 @@ const skills = [
 </script>
 
 <template>
-  <div class="bg-snow-500">
+  <section id="skills" class="bg-snow-500">
     <UiContainer class="py-24">
       <Ui.UiSectionTitle
         :title="t('landing.skills.heading')"
@@ -125,5 +125,5 @@ const skills = [
         </Ui.UiCard>
       </div>
     </UiContainer>
-  </div>
+  </section>
 </template>

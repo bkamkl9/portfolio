@@ -10,7 +10,7 @@ const { t } = useI18n()
 </script>
 
 <template>
-  <div class="bg-white-500">
+  <section id="hero" class="bg-white-500">
     <UiContainer class="min-h-screen grid place-items-center">
       <div class="flex flex-col items-center">
         <UiAvatar class="mb-6" :image="kamil">
@@ -44,5 +44,5 @@ const { t } = useI18n()
         </div>
       </div>
     </UiContainer>
-  </div>
+  </section>
 </template>

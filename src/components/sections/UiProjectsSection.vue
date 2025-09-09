@@ -19,7 +19,8 @@ const otherProjects = computed(() => content.value.filter((project: any) => !pro
 </script>
 
 <template>
-  <UiContainer class="py-24">
+  <section id="projects">
+    <UiContainer class="py-24">
     <Ui.UiSectionTitle
       :title="t('landing.projects.heading')"
       :description="t('landing.projects.paragraph')"
@@ -114,5 +115,6 @@ const otherProjects = computed(() => content.value.filter((project: any) => !pro
         </template>
       </Ui.UiCard>
     </div>
-  </UiContainer>
+    </UiContainer>
+  </section>
 </template>

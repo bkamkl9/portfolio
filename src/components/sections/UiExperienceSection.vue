@@ -20,7 +20,7 @@ const selected = ref<string>(switchOptions.value[1].value)
 </script>
 
 <template>
-  <div class="bg-snow-500">
+  <section id="experience" class="bg-snow-500">
     <UiContainer class="py-24">
       <Ui.UiSectionTitle
         :title="t('landing.experience.heading')"
@@ -121,5 +121,5 @@ const selected = ref<string>(switchOptions.value[1].value)
         </p>
       </div>
     </UiContainer>
-  </div>
+  </section>
 </template>

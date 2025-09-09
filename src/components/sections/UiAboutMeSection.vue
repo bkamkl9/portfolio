@@ -8,7 +8,8 @@ const { t } = useI18n()
 </script>
 
 <template>
-  <UiContainer class="py-24">
+  <section id="about">
+    <UiContainer class="py-24">
     <Ui.UiSectionTitle
       :title="t('landing.about.heading')"
       :description="t('landing.about.paragraph')"
@@ -62,5 +63,6 @@ const { t } = useI18n()
         </div>
       </div>
     </div>
-  </UiContainer>
+    </UiContainer>
+  </section>
 </template>
