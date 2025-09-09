@@ -1,9 +1,8 @@
 <script setup lang="ts" generic="T extends string">
-import type { IconDefinition } from '@fortawesome/free-brands-svg-icons'
-import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
+import { Icon } from '@iconify/vue'
 
 const props = defineProps<{
-  options: { label: string; value: T; icon?: IconDefinition }[]
+  options: { label: string; value: T; icon?: string }[]
 }>()
 
 const selected = defineModel<T>('selected', { required: true })
@@ -23,7 +22,7 @@ const isSelected = (value: T) => selected.value === value
         }"
         @click="selected = option.value"
       >
-        <FontAwesomeIcon :icon="option.icon" v-if="option.icon" class="text-xs sm:text-sm" />
+        <Icon :icon="option.icon" v-if="option.icon" class="w-3 h-3 sm:w-4 sm:h-4" />
         <span>{{ option.label }}</span>
       </button>
     </div>

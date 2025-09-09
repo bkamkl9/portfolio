@@ -1,16 +1,30 @@
 <script setup lang="ts">
 import { UiContainer } from '../layout'
 import * as Ui from '../ui'
-import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
-import { faGithub } from '@fortawesome/free-brands-svg-icons'
+import { Icon } from '@iconify/vue'
 import { useI18n } from 'vue-i18n'
+
+// Types
+interface SkillProgress {
+  id: number
+  title: string
+  value: number
+}
+
+interface Skill {
+  id: number
+  icon: string
+  title: string
+  progress: SkillProgress[]
+  technologies: string[]
+}
 
 const { t } = useI18n()
 
-const skills = [
+const skills: Skill[] = [
   {
     id: 1,
-    icon: faGithub,
+    icon: 'solar:monitor-linear',
     title: t('landing.skills.skills.frontend'),
     progress: [
       { id: 1, title: 'Vue.js', value: 95 },
@@ -32,7 +46,7 @@ const skills = [
   },
   {
     id: 2,
-    icon: faGithub,
+    icon: 'solar:server-linear',
     title: t('landing.skills.skills.backend'),
     progress: [
       { id: 1, title: 'Python', value: 60 },
@@ -44,7 +58,7 @@ const skills = [
   },
   {
     id: 3,
-    icon: faGithub,
+    icon: 'solar:database-linear',
     title: t('landing.skills.skills.database_and_cloud'),
     progress: [
       { id: 1, title: 'PostgreSQL', value: 60 },
@@ -65,7 +79,7 @@ const skills = [
   },
   {
     id: 4,
-    icon: faGithub,
+    icon: 'solar:settings-linear',
     title: t('landing.skills.skills.tools_and_processes'),
     progress: [
       { id: 1, title: 'Software Architecture', value: 70 },
@@ -96,7 +110,7 @@ const skills = [
         <Ui.UiCard v-for="skill in skills" :key="skill.id">
           <template #header>
             <div class="flex items-center gap-2 p-4">
-              <FontAwesomeIcon :icon="skill.icon" />
+              <Icon :icon="skill.icon" class="w-4 h-4" />
               <h3 class="text-sm">{{ skill.title }}</h3>
             </div>
           </template>

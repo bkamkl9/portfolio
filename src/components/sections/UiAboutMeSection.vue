@@ -4,7 +4,25 @@ import * as Ui from '../ui'
 import { useI18n } from 'vue-i18n'
 import kamil from '@/assets/images/kamil.jpg'
 
+// Types
+interface Interest {
+  name: string
+  category: 'tech' | 'personal'
+}
+
 const { t } = useI18n()
+
+// Interests data - structured and typed
+const interests: Interest[] = [
+  { name: 'Web Development', category: 'tech' },
+  { name: 'UI/UX Design', category: 'tech' },
+  { name: 'Generative AI', category: 'tech' },
+  { name: 'Software Architecture', category: 'tech' },
+  { name: 'Techno', category: 'personal' },
+  { name: 'Greek mythology', category: 'personal' },
+  { name: 'Reading', category: 'personal' },
+  { name: 'Science', category: 'personal' },
+]
 </script>
 
 <template>
@@ -37,14 +55,13 @@ const { t } = useI18n()
           <div>
             <h3 class="text-sm text-black-500 mb-3">{{ t('landing.about.my_passions') }}</h3>
             <div class="flex flex-wrap gap-2 mb-6">
-              <Ui.UiPill>Web Development</Ui.UiPill>
-              <Ui.UiPill>UI/UX Design</Ui.UiPill>
-              <Ui.UiPill>Generative AI</Ui.UiPill>
-              <Ui.UiPill>Software Architecture</Ui.UiPill>
-              <Ui.UiPill>Techno</Ui.UiPill>
-              <Ui.UiPill>Greek mythology</Ui.UiPill>
-              <Ui.UiPill>Reading</Ui.UiPill>
-              <Ui.UiPill>Science</Ui.UiPill>
+              <Ui.UiPill
+                v-for="interest in interests"
+                :key="interest.name"
+                :variant="interest.category === 'tech' ? 'default' : 'outline'"
+              >
+                {{ interest.name }}
+              </Ui.UiPill>
             </div>
             <Ui.UiCard>
               <template #body>

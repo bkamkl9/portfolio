@@ -1,11 +1,10 @@
 <script setup lang="ts">
-import { UiAvatar, UiButton } from '../ui'
+import { UiAvatar, UiButton, UiSocialLinks } from '../ui'
 import { UiContainer } from '../layout'
-import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
-import { faGithub, faLinkedin, faMedium } from '@fortawesome/free-brands-svg-icons'
 import { Icon } from '@iconify/vue'
 import { useI18n } from 'vue-i18n'
 import kamil from '@/assets/images/kamil.jpg'
+import { SOCIAL_LINKS } from '@/constants/socialLinks'
 
 const { t } = useI18n()
 </script>
@@ -82,35 +81,7 @@ const { t } = useI18n()
             <span class="text-xs text-slate-gray-500 font-medium uppercase tracking-wider">{{
               t('landing.hero.connect')
             }}</span>
-            <div class="flex gap-4">
-              <UiButton
-                variant="icon"
-                title="GitHub"
-                href="https://github.com/bkamkl9"
-                target="_blank"
-                class="w-12 h-12 hover:scale-110 transition-transform duration-200"
-              >
-                <FontAwesomeIcon :icon="faGithub" class="text-lg" />
-              </UiButton>
-              <UiButton
-                variant="icon"
-                title="LinkedIn"
-                href="https://www.linkedin.com/in/kamil-bartczak-dev/"
-                target="_blank"
-                class="w-12 h-12 hover:scale-110 transition-transform duration-200"
-              >
-                <FontAwesomeIcon :icon="faLinkedin" class="text-lg" />
-              </UiButton>
-              <UiButton
-                variant="icon"
-                title="Medium"
-                href="https://medium.com/@kamilbartczak2023"
-                target="_blank"
-                class="w-12 h-12 hover:scale-110 transition-transform duration-200"
-              >
-                <FontAwesomeIcon :icon="faMedium" class="text-lg" />
-              </UiButton>
-            </div>
+            <UiSocialLinks :links="SOCIAL_LINKS" variant="default" size="lg" />
           </div>
         </div>
 
@@ -151,8 +122,8 @@ const { t } = useI18n()
             <div
               class="flex items-center gap-2 bg-white-500/80 backdrop-blur-sm px-3 py-2 rounded-full border border-smoke-500"
             >
-              <Icon icon="logos:typescript-icon" class="w-4 h-4" />
-              <span class="text-xs font-medium text-slate-gray-500">TypeScript</span>
+              <Icon icon="logos:python" class="w-4 h-4" />
+              <span class="text-xs font-medium text-slate-gray-500">Python</span>
             </div>
             <div
               class="flex items-center gap-2 bg-white-500/80 backdrop-blur-sm px-3 py-2 rounded-full border border-smoke-500"
