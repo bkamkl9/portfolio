@@ -2,6 +2,7 @@
 import { UiContainer } from '../layout'
 import * as Ui from '../ui'
 import { useI18n } from 'vue-i18n'
+import kamil from '@/assets/images/kamil.jpg'
 
 const { t } = useI18n()
 </script>
@@ -14,7 +15,7 @@ const { t } = useI18n()
     />
     <div class="grid grid-cols-1 grid-cols-1 xl:grid-cols-2 gap-6">
       <div class="bg-smoke-500 py-24 xl:aspect-square rounded-lg flex items-center justify-center">
-        <Ui.UiAvatar size="lg">
+        <Ui.UiAvatar size="lg" :image="kamil">
           <span class="text-xl font-medium">KB</span>
         </Ui.UiAvatar>
       </div>

@@ -4,6 +4,7 @@ import { UiContainer } from '../layout'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 import { faGithub, faLinkedin, faMedium } from '@fortawesome/free-brands-svg-icons'
 import { useI18n } from 'vue-i18n'
+import kamil from '@/assets/images/kamil.jpg'
 
 const { t } = useI18n()
 </script>
@@ -12,7 +13,7 @@ const { t } = useI18n()
   <div class="bg-white-500">
     <UiContainer class="min-h-screen grid place-items-center">
       <div class="flex flex-col items-center">
-        <UiAvatar class="mb-6">
+        <UiAvatar class="mb-6" :image="kamil">
           <span>KB</span>
         </UiAvatar>
         <h1 class="text-center text-sm mb-6 text-black-500">{{ t('landing.hero.heading') }}</h1>

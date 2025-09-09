@@ -1,8 +1,9 @@
 <script setup lang="ts">
 import { computed } from 'vue'
 
-const { size = 'md' } = defineProps<{
+const { size = 'md', image = undefined } = defineProps<{
   size?: 'md' | 'lg'
+  image?: string
 }>()
 
 const sizeClass = computed(() => {
@@ -16,6 +17,7 @@ const sizeClass = computed(() => {
 
 <template>
   <div :class="sizeClass">
-    <slot />
+    <img :src="image" alt="Avatar" class="w-full h-full object-cover rounded-full" v-if="image" />
+    <slot v-else />
   </div>
 </template>
