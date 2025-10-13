@@ -24,36 +24,20 @@
         "Frontend",
         "Backend"
       ],
-      "image": "https://placehold.co/600x400/6366f1/ffffff?text=BlazeYourPrint",
+      "image": "https://github.com/bkamkl9/portfolio/blob/main/src/assets/images/blazeyourprint.png?raw=true",
       "image_alt": "BlazeYourPrint - platforma e-commerce dla drukarni",
       "links": {}
     },
     {
-      "title": "Task Management App",
+      "title": "Verde Rucolla - Strona restauracji",
       "is_featured": false,
-      "description": "Aplikacja do zarządzania zadaniami z funkcjami czasu rzeczywistego, drag & drop oraz współpracy zespołowej. Zbudowana przy użyciu Vue.js, Node.js i MongoDB.",
-      "tags": ["Vue.js", "Node.js", "MongoDB", "Real-time"],
-      "image": "https://placehold.co/600x400/10b981/ffffff?text=Task+Manager",
-      "image_alt": "Aplikacja do zarządzania zadaniami",
-      "links": {}
-    },
-    {
-      "title": "Weather Dashboard",
-      "is_featured": false,
-      "description": "Responsywny dashboard pogodowy z prognozami, mapami interaktywnymi i personalizowanymi alertami. Wykorzystuje zewnętrzne API pogodowe.",
-      "tags": ["JavaScript", "API Integration", "Charts", "Responsive"],
-      "image": "https://placehold.co/600x400/3b82f6/ffffff?text=Weather+Dashboard",
-      "image_alt": "Dashboard pogodowy",
-      "links": {}
-    },
-    {
-      "title": "Personal Blog",
-      "is_featured": false,
-      "description": "Blog osobisty z systemem CMS, komentarzami i optymalizacją SEO. Zbudowany z Nuxt.js dla lepszej wydajności i indeksowania.",
-      "tags": ["Nuxt.js", "CMS", "SEO", "Blog"],
-      "image": "https://placehold.co/600x400/8b5cf6/ffffff?text=Personal+Blog",
-      "image_alt": "Blog osobisty",
-      "links": {}
+      "description": "Strona restauracji wraz z menu oraz informacjami o restauracji.",
+      "tags": ["Vue.js", "Tailwind CSS", "Typescript", "Figma"],
+      "image": "https://github.com/bkamkl9/portfolio/blob/main/src/assets/images/rucolla.png?raw=true",
+      "image_alt": "Verde Rucolla - Strona restauracji",
+      "links": {
+        "view_project": "https://github.com/bkamkl9/portfolio/blob/main/src/assets/images/rucolla_full.png?raw=true"
+      }
     }
   ],
   "en": [
@@ -81,36 +65,20 @@
         "Frontend",
         "Backend"
       ],
-      "image": "https://placehold.co/600x400/6366f1/ffffff?text=BlazeYourPrint",
+      "image": "https://github.com/bkamkl9/portfolio/blob/main/src/assets/images/blazeyourprint.png?raw=true",
       "image_alt": "BlazeYourPrint - e-commerce platform for printing services",
       "links": {}
     },
     {
-      "title": "Task Management App",
+      "title": "Verde Rucolla - Restaurant Website",
       "is_featured": false,
-      "description": "A collaborative task management application with real-time updates, drag & drop functionality, and team collaboration features. Built with Vue.js, Node.js, and MongoDB.",
-      "tags": ["Vue.js", "Node.js", "MongoDB", "Real-time"],
-      "image": "https://placehold.co/600x400/10b981/ffffff?text=Task+Manager",
-      "image_alt": "Task Management Application",
-      "links": {}
-    },
-    {
-      "title": "Weather Dashboard",
-      "is_featured": false,
-      "description": "Responsive weather dashboard with forecasts, interactive maps, and personalized alerts. Integrates with external weather APIs for real-time data.",
-      "tags": ["JavaScript", "API Integration", "Charts", "Responsive"],
-      "image": "https://placehold.co/600x400/3b82f6/ffffff?text=Weather+Dashboard",
-      "image_alt": "Weather Dashboard Application",
-      "links": {}
-    },
-    {
-      "title": "Personal Blog",
-      "is_featured": false,
-      "description": "A personal blog with CMS capabilities, comment system, and SEO optimization. Built with Nuxt.js for enhanced performance and search engine indexing.",
-      "tags": ["Nuxt.js", "CMS", "SEO", "Blog"],
-      "image": "https://placehold.co/600x400/8b5cf6/ffffff?text=Personal+Blog",
-      "image_alt": "Personal Blog Platform",
-      "links": {}
+      "description": "A restaurant website featuring a menu and information about the restaurant.",
+      "tags": ["Vue.js", "Tailwind CSS", "Typescript", "Figma"],
+      "image": "https://github.com/bkamkl9/portfolio/blob/main/src/assets/images/rucolla.png?raw=true",
+      "image_alt": "Verde Rucolla - Restaurant website",
+      "links": {
+        "view_project": "https://github.com/bkamkl9/portfolio/blob/main/src/assets/images/rucolla_full.png?raw=true"
+      }
     }
   ]
 }
