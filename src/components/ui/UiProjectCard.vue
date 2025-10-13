@@ -74,7 +74,7 @@ const showFeaturedBadge = variant === 'featured' && project.is_featured
         {{ project.description }}
       </p>
 
-      <div class="flex flex-wrap items-center gap-2 mt-4">
+      <div class="flex flex-wrap items-center gap-2 pt-4 mt-auto">
         <Ui.UiPill variant="outline" v-for="tag in project.tags" :key="tag">
           {{ tag }}
         </Ui.UiPill>
