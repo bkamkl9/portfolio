@@ -11,18 +11,9 @@ const { t } = useI18n()
 
 <template>
   <section id="hero" class="relative bg-gradient-to-br from-white-500 to-snow-500 overflow-hidden">
-    <!-- Background decorative elements -->
-    <div class="absolute inset-0 overflow-hidden pointer-events-none">
-      <div class="absolute -top-40 -right-40 w-80 h-80 bg-smoke-500/30 rounded-full blur-3xl"></div>
-      <div
-        class="absolute -bottom-40 -left-40 w-80 h-80 bg-smoke-500/20 rounded-full blur-3xl"
-      ></div>
-      <div class="absolute top-1/2 left-1/4 w-2 h-2 bg-slate-gray-500/20 rounded-full"></div>
-      <div class="absolute top-1/3 right-1/3 w-1 h-1 bg-slate-gray-500/30 rounded-full"></div>
-      <div class="absolute bottom-1/3 left-1/2 w-1.5 h-1.5 bg-slate-gray-500/20 rounded-full"></div>
-    </div>
-
-    <UiContainer class="min-h-screen flex items-center justify-center relative pt-24 pb-8 md:pt-28 md:pb-12 lg:py-0">
+    <UiContainer
+      class="min-h-screen flex items-center justify-center relative pt-24 pb-8 md:pt-28 md:pb-12 lg:py-0"
+    >
       <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center w-full max-w-6xl">
         <!-- Content Column -->
         <div
@@ -90,15 +81,19 @@ const { t } = useI18n()
           <div class="relative">
             <!-- Decorative rings -->
             <div
-              class="absolute inset-0 rounded-full bg-gradient-to-r from-slate-gray-500/20 to-transparent animate-spin-slow"
+              class="absolute -inset-6 rounded-full bg-gradient-to-r from-gray-500/15 to-transparent animate-pulse"
             ></div>
             <div
-              class="absolute -inset-4 rounded-full bg-gradient-to-r from-transparent via-smoke-500/30 to-transparent animate-pulse"
+              class="absolute -inset-3 rounded-full bg-gradient-to-r from-transparent via-gray-500/15 to-transparent animate-pulse"
             ></div>
 
             <!-- Main avatar -->
             <div class="relative">
-              <UiAvatar size="xl" :image="kamil" class="w-48 h-48 sm:w-56 sm:h-56 md:w-72 md:h-72 lg:w-80 lg:h-80">
+              <UiAvatar
+                size="xl"
+                :image="kamil"
+                class="w-48 h-48 sm:w-56 sm:h-56 md:w-72 md:h-72 lg:w-80 lg:h-80"
+              >
                 <span class="text-4xl font-bold">KB</span>
               </UiAvatar>
 

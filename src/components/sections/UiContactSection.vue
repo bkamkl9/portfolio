@@ -12,6 +12,7 @@ interface ContactInfo {
   value: string
   href: string
   icon: string
+  backgroundColor: string
 }
 
 interface SocialLink {
@@ -51,6 +52,7 @@ const contactInfo: ContactInfo[] = [
     value: 'kamil.bartczak2023@gmail.com',
     href: 'mailto:kamil.bartczak2023@gmail.com',
     icon: 'solar:letter-linear',
+    backgroundColor: 'bg-pink-300',
   },
   {
     type: 'phone',
@@ -58,6 +60,7 @@ const contactInfo: ContactInfo[] = [
     value: '+48 726 033 373',
     href: 'tel:+48726033373',
     icon: 'solar:phone-linear',
+    backgroundColor: 'bg-orange-300',
   },
   {
     type: 'location',
@@ -65,6 +68,7 @@ const contactInfo: ContactInfo[] = [
     value: 'Zielona Góra, Poland',
     href: 'https://maps.google.com/?q=Zielona+Góra,+Poland',
     icon: 'solar:map-point-linear',
+    backgroundColor: 'bg-blue-300',
   },
 ]
 
@@ -181,7 +185,8 @@ const submitForm = async () => {
                 :aria-label="`Contact via ${contact.label}: ${contact.value}`"
               >
                 <div
-                  class="w-10 h-10 aspect-square rounded-md bg-smoke-500 grid place-items-center"
+                  class="w-10 h-10 aspect-square rounded-md grid place-items-center"
+                  :class="contact.backgroundColor"
                 >
                   <Icon :icon="contact.icon" />
                 </div>

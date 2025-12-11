@@ -5,6 +5,7 @@ import * as Ui from '../ui'
 import { useI18n } from 'vue-i18n'
 import useContent from '@/composable/useContent'
 import { Icon } from '@iconify/vue'
+import backgroundImageUrl from '@/assets/images/bg-gradient-3.png?url'
 
 const { t } = useI18n()
 const content = await useContent('experience')
@@ -72,6 +73,11 @@ const selected = ref<string>(switchOptions.value[1].value)
       </div>
       <div
         class="col-span-3 rounded-lg border border-smoke-500 px-4 py-6 text-center bg-secondary-bg mt-8"
+        :style="{
+          backgroundImage: `url(${backgroundImageUrl})`,
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+        }"
       >
         <span class="text-black-500 text-sm font-medium flex items-center justify-center gap-2">
           <Icon icon="mingcute:certificate-fill" class="text-lg" />

@@ -3,7 +3,7 @@ import { UiContainer } from '../layout'
 import * as Ui from '../ui'
 import { useI18n } from 'vue-i18n'
 import kamil from '@/assets/images/kamil.jpg'
-
+import backgroundImageUrl from '@/assets/images/bg-glass-1.png?url'
 // Types
 interface Interest {
   name: string
@@ -34,7 +34,12 @@ const interests: Interest[] = [
       />
       <div class="grid grid-cols-1 grid-cols-1 xl:grid-cols-2 gap-6">
         <div
-          class="bg-smoke-500 py-24 xl:aspect-square rounded-lg flex items-center justify-center"
+          class="py-24 xl:aspect-square rounded-lg flex items-center justify-center"
+          :style="{
+            backgroundImage: `url(${backgroundImageUrl})`,
+            backgroundSize: 'cover',
+            backgroundPosition: 'center',
+          }"
         >
           <Ui.UiAvatar size="lg" :image="kamil">
             <span class="text-xl font-medium">KB</span>

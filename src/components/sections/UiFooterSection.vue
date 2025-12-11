@@ -2,7 +2,7 @@
 import * as Ui from '../layout'
 import { useI18n } from 'vue-i18n'
 import { Icon } from '@iconify/vue'
-
+import backgroundImageUrl from '@/assets/images/bg-gradient-3.png?url'
 // Types
 interface NavigationItem {
   key: string
@@ -100,7 +100,16 @@ const currentYear = new Date().getFullYear()
 </script>
 
 <template>
-  <footer class="border-t border-smoke-500 bg-snow-500" role="contentinfo" aria-label="Site footer">
+  <footer
+    class="border-t border-smoke-500 bg-snow-500"
+    role="contentinfo"
+    aria-label="Site footer"
+    :style="{
+      backgroundImage: `url(${backgroundImageUrl})`,
+      backgroundSize: 'cover',
+      backgroundPosition: 'center',
+    }"
+  >
     <Ui.UiContainer>
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-x-8 gap-y-8 py-12">
         <!-- Brand & Description -->
@@ -126,7 +135,7 @@ const currentYear = new Date().getFullYear()
                 :title="social.name"
                 target="_blank"
                 rel="noopener noreferrer"
-                class="w-9 h-9 bg-smoke-500 hover:bg-black-500 text-slate-gray-700 hover:text-white-500 rounded-lg flex items-center justify-center transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
+                class="w-9 h-9 bg-white hover:bg-pink-300 text-slate-gray-700 hover:text-white-500 rounded-lg flex items-center justify-center transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
               >
                 <Icon :icon="social.icon" class="w-4 h-4" />
               </a>
@@ -170,7 +179,7 @@ const currentYear = new Date().getFullYear()
                 :aria-label="`Contact via ${contact.label}: ${contact.value}`"
               >
                 <div
-                  class="w-8 h-8 bg-smoke-500 group-hover:bg-black-500 text-slate-gray-700 group-hover:text-white-500 rounded-md flex items-center justify-center transition-colors duration-200 flex-shrink-0"
+                  class="w-8 h-8 bg-white group-hover:bg-orange-300 text-slate-gray-700 group-hover:text-white-500 rounded-md flex items-center justify-center transition-colors duration-200 flex-shrink-0"
                 >
                   <Icon :icon="contact.icon" class="w-4 h-4" />
                 </div>
