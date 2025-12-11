@@ -45,7 +45,8 @@ const showFeaturedBadge = variant === 'featured' && project.is_featured
   <Ui.UiCard>
     <template #header>
       <div
-        class="w-full h-full aspect-video bg-smoke-500 flex items-center justify-center overflow-hidden"
+        class="w-full h-full bg-smoke-500 flex items-center justify-center overflow-hidden"
+        style="aspect-ratio: 3/2"
       >
         <img
           v-if="project.image"
