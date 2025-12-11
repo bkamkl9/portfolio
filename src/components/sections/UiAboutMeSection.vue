@@ -3,7 +3,7 @@ import { UiContainer } from '../layout'
 import * as Ui from '../ui'
 import { useI18n } from 'vue-i18n'
 import kamil from '@/assets/images/kamil.jpg'
-import backgroundImageUrl from '@/assets/images/bg-glass-1.png?url'
+import backgroundImageUrl from '@/assets/images/bg-photo-1.png?url'
 // Types
 interface Interest {
   name: string
