@@ -6,6 +6,7 @@ import { useI18n } from 'vue-i18n'
 interface ProjectLink {
   view_project?: string
   view_code?: string
+  learn_more?: string
 }
 
 interface Project {
@@ -90,6 +91,17 @@ const showFeaturedBadge = variant === 'featured' && project.is_featured
           v-if="project.links.view_project"
         >
           {{ t('landing.projects.view_project') }}
+        </Ui.UiButton>
+
+        <Ui.UiButton
+          size="md"
+          :variant="variant === 'featured' ? 'primary' : 'secondary'"
+          :class="buttonClass"
+          :href="project.links.learn_more"
+          target="_blank"
+          v-if="project.links.learn_more"
+        >
+          {{ t('landing.projects.learn_more') }}
         </Ui.UiButton>
 
         <Ui.UiButton

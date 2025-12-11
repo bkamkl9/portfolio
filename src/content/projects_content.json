@@ -1,6 +1,17 @@
 {
   "pl": [
     {
+      "title": "AlterSelf – Aplikacja produktywności dla osób z ADHD",
+      "is_featured": true,
+      "description": "Jako co-founder i Fullstack Developer współtwrzę aplikację produktywności opartą o inteligentnego agenta AI, który analizuje harmonogram użytkownika, priorytetyzuje zadania i przypomina o nadchodzących wydarzeniach. Projektowałem backend w Deno/TypeScript wg DDD i architektury heksagonalnej, frontend w Vue 3 z komponentami responsywnymi oraz całą infrastrukturę, w tym klaster i registry aplikacji na VPS. Integracje obejmowały Google Calendar API i mechanizmy VoIP.",
+      "tags": ["Vue.js", "Deno", "TypeScript", "Google Cloud", "AI Agents", "DDD", "Hexagonal Architecture", "Capacitor"],
+      "image": "https://github.com/bkamkl9/portfolio/blob/main/src/assets/images/alterself.png?raw=true",
+      "image_alt": "AlterSelf screenshot",
+      "links": {
+        "learn_more": "https://investment.alterself-project.com/"
+      }
+    },
+    {
       "title": "Infermedica Chatbot diagnostyczny",
       "is_featured": true,
       "description": "Uczestniczyłem w projektowaniu architektury diagnostycznego chatbota dla pacjentów, wspierającego identyfikację chorób i kierowanie do odpowiedniej ścieżki leczenia. Tworzyłem API, współprojektowałem backend, brałem udział w konfiguracji infrastruktury w chmurze (Google Cloud, Kubernetes), oraz współtworzyłem serwis obsługujący vector store.",
@@ -25,7 +36,7 @@
     },
     {
       "title": "BlazeYourPrint",
-      "is_featured": true,
+      "is_featured": false,
       "description": "Kompleksowa platforma e-commerce dla firmy drukarskiej. Stworzyłem niestandardowy kreator produktów, panel zarządzania klientami i produktami, system rabatów, optymalizację procesu checkout oraz angażującą stronę główną. Projekt obejmował pełny cykl rozwoju od koncepcji do wdrożenia.",
       "tags": [
         "E-commerce",
@@ -53,6 +64,17 @@
   ],
   "en": [
     {
+      "title": "AlterSelf – Productivity App for People with ADHD",
+      "is_featured": true,
+      "description": "As a co-founder and Fullstack Developer, I co-created a productivity app powered by an intelligent AI agent that analyzes the user's schedule, prioritizes tasks, and reminds them of upcoming events. I designed the backend in Deno/TypeScript following DDD and Hexagonal Architecture principles, the frontend in Vue 3 with responsive components, and the entire infrastructure, including a cluster and application registry on a VPS. Integrations included the Google Calendar API and VoIP mechanisms.",
+      "tags": ["Vue.js", "Deno", "TypeScript", "Google Cloud", "AI Agents", "DDD", "Hexagonal Architecture", "Capacitor"],
+      "image": "https://github.com/bkamkl9/portfolio/blob/main/src/assets/images/alterself.png?raw=true",
+      "image_alt": "AlterSelf screenshot",
+      "links": {
+        "learn_more": "https://investment.alterself-project.com/"
+      }
+    },
+    {
       "title": "Infermedica Diagnostic Chatbot",
       "is_featured": true,
       "description": "I participated in designing the architecture of a diagnostic chatbot for patients, assisting in identifying illnesses and directing users to the appropriate treatment path. I developed the API, co-designed the backend, took part in configuring cloud infrastructure (Google Cloud, Kubernetes), and co-created the service handling the vector store.",
@@ -77,7 +99,7 @@
     },
     {
       "title": "BlazeYourPrint",
-      "is_featured": true,
+      "is_featured": false,
       "description": "Comprehensive e-commerce platform for a printing company. I developed a custom product builder, dashboard for efficient customer and product management, discount system, optimized checkout process, and engaging landing page. The project encompassed the full development cycle from concept to deployment.",
       "tags": [
         "E-commerce",

@@ -9,6 +9,7 @@ import { computed } from 'vue'
 interface ProjectLink {
   view_project?: string
   view_code?: string
+  learn_more?: string
 }
 
 interface Project {
@@ -49,8 +50,8 @@ const otherProjects = computed(() => {
         :description="t('landing.projects.paragraph')"
       />
       <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-        <Ui.UiProjectCard 
-          v-for="project in featuredProjects" 
+        <Ui.UiProjectCard
+          v-for="project in featuredProjects"
           :key="project.title"
           :project="project"
           variant="featured"
@@ -60,8 +61,8 @@ const otherProjects = computed(() => {
         t('landing.projects.other_projects')
       }}</span>
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-        <Ui.UiProjectCard 
-          v-for="project in otherProjects" 
+        <Ui.UiProjectCard
+          v-for="project in otherProjects"
           :key="project.title"
           :project="project"
           variant="regular"
