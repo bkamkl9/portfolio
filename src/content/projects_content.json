@@ -16,7 +16,7 @@
       "is_featured": true,
       "description": "Uczestniczyłem w projektowaniu architektury diagnostycznego chatbota dla pacjentów, wspierającego identyfikację chorób i kierowanie do odpowiedniej ścieżki leczenia. Tworzyłem API, współprojektowałem backend, brałem udział w konfiguracji infrastruktury w chmurze (Google Cloud, Kubernetes), oraz współtworzyłem serwis obsługujący vector store.",
       "tags": ["Vue.js", "Python", "FastApi", "Google Cloud", "Kubernetes", "LLM", "NLP"],
-      "image": "https://github.com/bkamkl9/portfolio/blob/main/src/assets/images/infermedica_chatbot.png?raw=true",
+      "image": "https://github.com/bkamkl9/portfolio/blob/main/src/assets/images/infermedica_chatbot_v2.png?raw=true",
       "image_alt": "Infermedica Chatbot diagnostyczny screenshot",
       "links": {
         "view_project": "https://symptomate.com/be-first/chat/en/"
@@ -46,7 +46,7 @@
         "Frontend",
         "Backend"
       ],
-      "image": "https://github.com/bkamkl9/portfolio/blob/main/src/assets/images/blazeyourprint.png?raw=true",
+      "image": "https://github.com/bkamkl9/portfolio/blob/main/src/assets/images/blazeyourprint_v2.png?raw=true",
       "image_alt": "BlazeYourPrint - platforma e-commerce dla drukarni",
       "links": {}
     },
@@ -55,7 +55,7 @@
       "is_featured": false,
       "description": "Strona internetowa nowoczesnej restauracji Verde Rucolla, zawierająca przejrzyste menu, informacje o lokalizacji, godzinach otwarcia oraz historii restauracji. Projekt obejmował zaprojektowanie responsywnego interfejsu użytkownika. Współpracowałem przy przygotowaniu makiet w Figmie oraz ich implementacji w Vue.js, z wykorzystaniem Tailwind CSS.",
       "tags": ["Vue.js", "Tailwind CSS", "Typescript", "Figma"],
-      "image": "https://github.com/bkamkl9/portfolio/blob/main/src/assets/images/rucolla.png?raw=true",
+      "image": "https://github.com/bkamkl9/portfolio/blob/main/src/assets/images/rucolla_v2.png?raw=true",
       "image_alt": "Verde Rucolla - Strona restauracji",
       "links": {
         "view_project": "https://github.com/bkamkl9/portfolio/blob/main/src/assets/images/rucolla_full.png?raw=true"
@@ -79,7 +79,7 @@
       "is_featured": true,
       "description": "I participated in designing the architecture of a diagnostic chatbot for patients, assisting in identifying illnesses and directing users to the appropriate treatment path. I developed the API, co-designed the backend, took part in configuring cloud infrastructure (Google Cloud, Kubernetes), and co-created the service handling the vector store.",
       "tags": ["Vue.js", "Python", "FastApi", "Google Cloud", "Kubernetes", "LLM", "NLP"],
-      "image": "https://github.com/bkamkl9/portfolio/blob/main/src/assets/images/infermedica_chatbot.png?raw=true",
+      "image": "https://github.com/bkamkl9/portfolio/blob/main/src/assets/images/infermedica_chatbot_v2.png?raw=true",
       "image_alt": "Infermedica Diagnostic Chatbot screenshot",
       "links": {
         "view_project": "https://symptomate.com/be-first/chat/en/"
@@ -109,7 +109,7 @@
         "Frontend",
         "Backend"
       ],
-      "image": "https://github.com/bkamkl9/portfolio/blob/main/src/assets/images/blazeyourprint.png?raw=true",
+      "image": "https://github.com/bkamkl9/portfolio/blob/main/src/assets/images/blazeyourprint_v2.png?raw=true",
       "image_alt": "BlazeYourPrint - e-commerce platform for printing services",
       "links": {}
     },
@@ -118,7 +118,7 @@
       "is_featured": false,
       "description": "A website for the modern restaurant Verde Rucolla, featuring a clear menu, information about location, opening hours, and the restaurant's history. The project included designing a responsive user interface. I collaborated on preparing wireframes in Figma and implementing them in Vue.js using Tailwind CSS.",
       "tags": ["Vue.js", "Tailwind CSS", "Typescript", "Figma"],
-      "image": "https://github.com/bkamkl9/portfolio/blob/main/src/assets/images/rucolla.png?raw=true",
+      "image": "https://github.com/bkamkl9/portfolio/blob/main/src/assets/images/rucolla_v2.png?raw=true",
       "image_alt": "Verde Rucolla - Restaurant website",
       "links": {
         "view_project": "https://github.com/bkamkl9/portfolio/blob/main/src/assets/images/rucolla_full.png?raw=true"
