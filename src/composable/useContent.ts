@@ -1,8 +1,9 @@
 import { useI18n } from "vue-i18n";
 
-import type projectsContent from "@/content/projects_content.json";
 import { computed } from "vue";
 type ContentType = "projects" | "experience";
+import projects_content from "@/content/projects_content.ts";
+import experience_content from "@/content/experience_content.ts";
 
 export default async function useContent(type: ContentType) {
     const { locale } = useI18n();
@@ -11,12 +12,12 @@ export default async function useContent(type: ContentType) {
 
     switch (type) {
         case "projects":
-            value = await import(`@/content/${type}_content.json`);
+            value = projects_content;
             return computed(() =>
                 value[localeComputed.value as keyof typeof value]
             );
         case "experience":
-            value = await import(`@/content/experience_content.json`);
+            value = experience_content;
             return computed(() =>
                 value[localeComputed.value as keyof typeof value]
             );
