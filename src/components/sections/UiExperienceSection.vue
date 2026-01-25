@@ -73,20 +73,24 @@ const selected = ref<string>(switchOptions.value[1].value)
       </div>
       <div
         class="col-span-3 rounded-lg border border-smoke-500 px-4 py-6 text-center bg-secondary-bg mt-8"
-        :style="{
-          backgroundImage: `url(${backgroundImageUrl})`,
-          backgroundSize: 'cover',
-          backgroundPosition: 'center',
-        }"
+        id="experience-gradient"
       >
-        <span class="text-black-500 text-sm font-medium flex items-center justify-center gap-2">
+        <span class="text-[#F2D3BD] text-sm font-medium flex items-center justify-center gap-2">
           <Icon icon="mingcute:certificate-fill" class="text-lg" />
           {{ t('landing.experience.continuous_learning.title') }}
         </span>
-        <p class="text-slate-gray-700 text-xs mt-4 max-w-lg mx-auto leading-relaxed">
+        <p class="text-[#F2D3BD]/80 text-xs mt-4 max-w-lg mx-auto leading-relaxed">
           {{ t('landing.experience.continuous_learning.description') }}
         </p>
       </div>
     </UiContainer>
   </section>
 </template>
+
+<style scoped>
+#experience-gradient {
+  background-size: cover;
+  background-position: center;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('@/assets/images/velvet-brown.avif');
+}
+</style>

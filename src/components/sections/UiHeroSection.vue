@@ -10,7 +10,7 @@ const { t } = useI18n()
 </script>
 
 <template>
-  <section id="hero" class="relative bg-gradient-to-br from-white-500 to-snow-500 overflow-hidden">
+  <section id="hero" class="relative overflow-hidden">
     <UiContainer
       class="min-h-screen flex items-center justify-center relative pt-24 pb-8 md:pt-28 md:pb-12 lg:py-0"
     >
@@ -21,34 +21,35 @@ const { t } = useI18n()
         >
           <!-- Greeting -->
           <div
-            class="inline-flex items-center gap-2 bg-smoke-500/50 backdrop-blur-sm px-4 py-2 rounded-full mb-6"
+            class="inline-flex items-center gap-2 bg-amber-700/50 backdrop-blur-sm px-4 py-2 rounded-full mb-6"
           >
             <div class="w-2 h-2 bg-green-500 rounded-full animate-pulse"></div>
-            <span class="text-xs text-slate-gray-500 font-medium">{{
+            <span class="text-xs text-gray-100 font-medium">{{
               t('landing.hero.status')
             }}</span>
           </div>
 
           <!-- Main heading -->
-          <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-black-500 mb-4 leading-tight">
+          <h1 class="text-4xl md:text-5xl lg:text-6xl font-semibold text-[#F2D3BD] mb-4 leading-tight" style="font-family: 'Playfair Display', serif;">
             {{ t('landing.hero.heading') }}
           </h1>
 
           <!-- Subheading with gradient -->
           <h2
-            class="text-xl md:text-2xl font-medium bg-gradient-to-r from-slate-gray-500 to-black-500 bg-clip-text text-transparent mb-6"
+            class="text-xl md:text-2xl bg-gradient-to-r from-[#F2D3BD] to-[#F2D3BD] bg-clip-text text-transparent mb-6"
           >
             {{ t('landing.hero.subheading') }}
           </h2>
 
           <!-- Description -->
-          <p class="text-lg text-slate-gray-500 mb-8 max-w-xl leading-relaxed">
+          <p class="text-md text-gray-200/50 mb-8 max-w-xl leading-relaxed">
             {{ t('landing.hero.paragraph') }}
           </p>
 
           <!-- Action buttons -->
           <div class="flex flex-col sm:flex-row gap-4 mb-8 w-full sm:w-auto">
             <UiButton
+              id="hero-button"
               class="min-w-[180px] px-8 py-4 text-sm font-medium"
               size="lg"
               href="#projects"
@@ -57,7 +58,7 @@ const { t } = useI18n()
               <span>{{ t('landing.hero.actions.view_my_work') }}</span>
             </UiButton>
             <UiButton
-              class="min-w-[180px] px-8 py-4 text-sm font-medium"
+              class="min-w-[180px] px-8 py-4 text-sm font-medium bg-[#F2D3BD]!"
               size="lg"
               variant="secondary"
               href="#contact"
@@ -69,7 +70,7 @@ const { t } = useI18n()
 
           <!-- Social links with labels -->
           <div class="flex flex-col items-center lg:items-start gap-3">
-            <span class="text-xs text-slate-gray-500 font-medium uppercase tracking-wider">{{
+            <span class="text-xs text-gray-200/50 font-medium uppercase tracking-wider">{{
               t('landing.hero.connect')
             }}</span>
             <UiSocialLinks :links="SOCIAL_LINKS" variant="default" size="lg" />
@@ -99,7 +100,7 @@ const { t } = useI18n()
 
               <!-- Status indicator -->
               <div
-                class="absolute bottom-4 right-4 sm:bottom-6 sm:right-6 md:bottom-8 md:right-8 w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8 bg-green-500 rounded-full border-2 sm:border-3 md:border-4 border-white-500 flex items-center justify-center"
+                class="absolute bottom-4 right-4 sm:bottom-6 sm:right-6 md:bottom-8 md:right-8 w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8 bg-[#F2D3BD]/80 rounded-full border-2 sm:border-3 md:border-4 border-white-500 flex items-center justify-center"
               >
                 <Icon icon="solar:code-linear" class="w-4 h-4 text-white" />
               </div>
@@ -109,19 +110,19 @@ const { t } = useI18n()
           <!-- Tech stack indicators -->
           <div class="flex flex-wrap gap-3 mt-8 justify-center max-w-sm">
             <div
-              class="flex items-center gap-2 bg-white-500/80 backdrop-blur-sm px-3 py-2 rounded-full border border-smoke-500"
+              class="flex items-center gap-2 backdrop-blur-sm px-3 py-2 rounded-full border bg-[#F2D3BD]/80"
             >
               <Icon icon="logos:vue" class="w-4 h-4" />
               <span class="text-xs font-medium text-slate-gray-700">Vue.js</span>
             </div>
             <div
-              class="flex items-center gap-2 bg-white-500/80 backdrop-blur-sm px-3 py-2 rounded-full border border-smoke-500"
+              class="flex items-center gap-2 backdrop-blur-sm px-3 py-2 rounded-full border bg-[#F2D3BD]/80"
             >
               <Icon icon="logos:python" class="w-4 h-4" />
               <span class="text-xs font-medium text-slate-gray-700">Python</span>
             </div>
             <div
-              class="flex items-center gap-2 bg-white-500/80 backdrop-blur-sm px-3 py-2 rounded-full border border-smoke-500"
+              class="flex items-center gap-2 backdrop-blur-sm px-3 py-2 rounded-full border bg-[#F2D3BD]/80"
             >
               <Icon icon="logos:nodejs-icon" class="w-4 h-4" />
               <span class="text-xs font-medium text-slate-gray-700">Node.js</span>
@@ -144,3 +145,25 @@ const { t } = useI18n()
     </UiContainer>
   </section>
 </template>
+
+
+<style scoped>
+#hero {
+  background-image: linear-gradient( rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8) ), url('@/assets/images/velvet-brown.avif');
+  background-size: cover;
+  background-position: center;
+}
+
+#hero-button {
+  background-image: url('@/assets/images/velvet-brown.avif');
+  background-size: cover;
+  background-position: center;
+}
+
+.linear-gradient-border { 
+  border: 1px solid transparent;
+  background: linear-gradient(45deg, #F2D3BD, #F2D3BD), linear-gradient(45deg, #F2D3BD, #F2D3BD);
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+}
+</style>

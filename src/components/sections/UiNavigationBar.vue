@@ -80,26 +80,26 @@ const toggleMenu = () => {
   <header>
     <!-- Main Navigation Bar -->
     <nav
-      class="bg-white-500/70 backdrop-blur-md border-b border-smoke-500 fixed top-0 left-0 right-0 z-50"
+      class="bg-[#170D0B]/70 backdrop-blur-md fixed top-0 left-0 right-0 z-50"
       role="navigation"
       aria-label="Main navigation"
     >
       <div class="container mx-auto px-4 py-4">
         <div class="flex justify-between items-center">
           <!-- Logo/Brand -->
-          <div class="text-sm font-bold text-black-500">
+          <div class="text-sm font-bold text-gray-100">
             <a href="#hero" @click="scrollToSection('#hero')" aria-label="Go to home section">
               Kamil Bartczak
             </a>
           </div>
 
           <!-- Desktop Navigation -->
-          <ul class="hidden lg:flex gap-6 text-sm text-slate-gray-700" role="menubar">
+          <ul class="hidden lg:flex gap-6 text-sm text-gray-200" role="menubar">
             <li v-for="item in navigationItems" :key="item.key" role="none">
               <a
                 :href="item.href"
                 @click.prevent="scrollToSection(item.href)"
-                class="hover:text-black-500 transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 rounded-sm px-2 py-1"
+                class="hover:text-white transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 rounded-sm px-2 py-1"
                 role="menuitem"
                 :aria-label="`Navigate to ${t(item.translationKey)} section`"
               >
@@ -113,7 +113,7 @@ const toggleMenu = () => {
             <!-- Language Switcher -->
             <button
               @click="handleLanguageChange(alternativeLanguage.code)"
-              class="text-sm flex items-center gap-2 px-3 py-1.5 rounded-md hover:bg-smoke-500 transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-blue-500"
+              class="text-sm flex items-center gap-2 px-3 py-1.5 rounded-md hover:bg-gray-100/10 transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-blue-500 text-gray-100"
               :aria-label="`Switch to ${t(alternativeLanguage.label)}`"
               :title="`Switch to ${t(alternativeLanguage.label)}`"
             >

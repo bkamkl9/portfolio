@@ -52,7 +52,7 @@ const contactInfo: ContactInfo[] = [
     value: 'kamil.bartczak2023@gmail.com',
     href: 'mailto:kamil.bartczak2023@gmail.com',
     icon: 'solar:letter-linear',
-    backgroundColor: 'bg-pink-300',
+    backgroundColor: 'bg-[#F2D3BD]',
   },
   {
     type: 'phone',
@@ -60,7 +60,7 @@ const contactInfo: ContactInfo[] = [
     value: '+48 726 033 373',
     href: 'tel:+48726033373',
     icon: 'solar:phone-linear',
-    backgroundColor: 'bg-orange-300',
+    backgroundColor: 'bg-[#F2D3BD]',
   },
   {
     type: 'location',
@@ -68,7 +68,7 @@ const contactInfo: ContactInfo[] = [
     value: 'Zielona Góra, Poland',
     href: 'https://maps.google.com/?q=Zielona+Góra,+Poland',
     icon: 'solar:map-point-linear',
-    backgroundColor: 'bg-blue-300',
+    backgroundColor: 'bg-[#F2D3BD]',
   },
 ]
 

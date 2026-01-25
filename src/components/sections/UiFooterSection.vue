@@ -2,7 +2,6 @@
 import * as Ui from '../layout'
 import { useI18n } from 'vue-i18n'
 import { Icon } from '@iconify/vue'
-import backgroundImageUrl from '@/assets/images/bg-gradient-3.png?url'
 // Types
 interface NavigationItem {
   key: string
@@ -101,11 +100,11 @@ const currentYear = new Date().getFullYear()
 
 <template>
   <footer
+    id="footer"
     class="border-t border-smoke-500 bg-snow-500"
     role="contentinfo"
     aria-label="Site footer"
     :style="{
-      backgroundImage: `url(${backgroundImageUrl})`,
       backgroundSize: 'cover',
       backgroundPosition: 'center',
     }"
@@ -114,16 +113,16 @@ const currentYear = new Date().getFullYear()
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-x-8 gap-y-8 py-12">
         <!-- Brand & Description -->
         <div class="lg:col-span-2">
-          <h3 class="text-sm font-medium text-black-500 mb-4">
+          <h3 class="text-sm text-gray-200 font-medium text-black-500 mb-4">
             {{ t('footer.name') }}
           </h3>
-          <p class="text-sm text-slate-gray-500 leading-relaxed max-w-md">
+          <p class="text-sm text-gray-400 leading-relaxed max-w-md">
             {{ t('footer.paragraph') }}
           </p>
 
           <!-- Social Links -->
           <div class="mt-6">
-            <h4 class="text-xs font-medium text-black-500 mb-3 uppercase tracking-wider">
+            <h4 class="text-xs font-medium text-gray-200 mb-3 uppercase tracking-wider">
               Follow Me
             </h4>
             <div class="flex items-center gap-3">
@@ -135,7 +134,7 @@ const currentYear = new Date().getFullYear()
                 :title="social.name"
                 target="_blank"
                 rel="noopener noreferrer"
-                class="w-9 h-9 bg-white hover:bg-pink-300 text-slate-gray-700 hover:text-white-500 rounded-lg flex items-center justify-center transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
+                class="w-9 h-9 bg-[#F2D3BD] hover:bg-[#F2D3BD]/80 hover:text-white-500 rounded-lg flex items-center justify-center transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
               >
                 <Icon :icon="social.icon" class="w-4 h-4" />
               </a>
@@ -154,7 +153,7 @@ const currentYear = new Date().getFullYear()
                 <a
                   :href="item.href"
                   @click.prevent="scrollToSection(item.href)"
-                  class="text-sm text-slate-gray-500 hover:text-black-500 transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 rounded-sm px-1 py-0.5"
+                  class="text-sm text-gray-400 hover:text-white transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 rounded-sm px-1 py-0.5"
                   :aria-label="`Navigate to ${t(item.translationKey)} section`"
                 >
                   {{ t(item.translationKey) }}
@@ -175,11 +174,11 @@ const currentYear = new Date().getFullYear()
                 :href="contact.href"
                 :target="contact.type === 'location' ? '_blank' : undefined"
                 :rel="contact.type === 'location' ? 'noopener noreferrer' : undefined"
-                class="text-sm text-slate-gray-500 hover:text-black-500 transition-colors duration-200 flex items-center gap-3 group focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 rounded-sm p-1"
+                class="text-sm text-gray-200 hover:text-white transition-colors duration-200 flex items-center gap-3 group focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 rounded-sm p-1"
                 :aria-label="`Contact via ${contact.label}: ${contact.value}`"
               >
                 <div
-                  class="w-8 h-8 bg-white group-hover:bg-orange-300 text-slate-gray-700 group-hover:text-white-500 rounded-md flex items-center justify-center transition-colors duration-200 flex-shrink-0"
+                  class="w-8 h-8 bg-[#F2D3BD]/80 group-hover:bg-[#F2D3BD] text-gray-800 rounded-md flex items-center justify-center transition-colors duration-200 flex-shrink-0"
                 >
                   <Icon :icon="contact.icon" class="w-4 h-4" />
                 </div>
@@ -195,11 +194,11 @@ const currentYear = new Date().getFullYear()
         <div
           class="flex flex-col sm:flex-row justify-between items-center gap-4 text-center sm:text-left"
         >
-          <p class="text-xs text-slate-gray-500">
+          <p class="text-xs text-gray-200">
             &copy; {{ currentYear }} {{ t('footer.name') }}.
             {{ t('footer.disclaimer') }}
           </p>
-          <p class="text-xs text-slate-gray-500">
+          <p class="text-xs text-gray-200">
             {{ t('footer.built_with', ['Vite', 'Vue.js']) }}
           </p>
         </div>
@@ -207,3 +206,9 @@ const currentYear = new Date().getFullYear()
     </Ui.UiContainer>
   </footer>
 </template>
+
+<style scoped>
+#footer {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('@/assets/images/velvet-brown.avif');
+}
+</style>

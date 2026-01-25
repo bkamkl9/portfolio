@@ -5,7 +5,7 @@ defineProps<{
 </script>
 
 <template>
-  <section :class="['max-w-[1000px] mx-auto px-4 sm:px-6', $props.class]">
+  <div :class="['max-w-[1000px] mx-auto px-4 sm:px-6 section', $props.class]">
     <slot />
-  </section>
+  </div>
 </template>
