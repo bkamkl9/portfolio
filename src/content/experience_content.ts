@@ -2,6 +2,28 @@ export default {
   "pl": {
     "experience": [
       {
+        "title": "Platform Engineer (Full-Stack & DevOps)",
+        "company": "Independent Music Market",
+        "location": "Poznań, Woj. Wielkopolskie, Polska / Hybrydowo",
+        "date": "2026 - obecnie",
+        "description": "Odpowiadam za rozwój i utrzymanie platformy Independent Music Market jako Platform Engineer, łącząc kompetencje full-stackowe oraz DevOps. Projektuję i rozwijam aplikacje backendowe i frontendowe, tworzę pipeline'y automatyzujące oraz narzędzia do przetwarzania danych. Integruję zewnętrzne API oraz zarządzam infrastrukturą, wdrożeniami i procesami DevOps.",
+        "achievements": [
+          "Budowa i utrzymanie aplikacji full-stack (backend + frontend)",
+          "Tworzenie pipeline’ów automatyzacji i narzędzi do przetwarzania danych",
+          "Integracja zewnętrznych API i usług",
+          "Zarządzanie infrastrukturą, wdrożeniami i procesami DevOps"
+        ],
+        "tags": [
+          "Full-stack",
+          "DevOps",
+          "APIs",
+          "Automation",
+          "Data Processing",
+          "Infrastructure",
+          "Typescript",
+        ]
+      },
+      {
         "title": "Inżynier Oprogramowania",
         "company": "Infermedica",
         "location": "Wrocław / Zdalnie",
@@ -82,6 +104,28 @@ export default {
   },
   "en": {
     "experience": [
+      {
+        "title": "Platform Engineer (Full-Stack & DevOps)",
+        "company": "Independent Music Market",
+        "location": "Poznań, Poland / Hybrid",
+        "date": "2026 - Present",
+        "description": "Working as a Platform Engineer at Independent Music Market, combining full-stack development with DevOps responsibilities. I design and maintain backend APIs and frontend applications, build automation pipelines and data processing tools, integrate third-party services, and manage infrastructure, deployments, and DevOps workflows.",
+        "achievements": [
+          "Building and maintaining full-stack applications (backend and frontend)",
+          "Developing automation pipelines and data processing tools",
+          "Integrating third-party APIs and external services",
+          "Managing infrastructure, deployments, and DevOps processes"
+        ],
+        "tags": [
+          "Full-stack",
+          "DevOps",
+          "APIs",
+          "Automation",
+          "Data Processing",
+          "Infrastructure",
+          "Typescript",
+        ]
+      },
       {
         "title": "Software Engineer",
         "company": "Infermedica",
